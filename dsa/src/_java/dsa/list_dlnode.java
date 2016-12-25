@@ -1,14 +1,14 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 基于双向链表实现列表结构
- */
+  */
 
 package dsa;
 
@@ -24,7 +24,7 @@ public class List_DLNode implements List {
       header.setNext(trailer);//头、尾节点相互链接
    }
 
-   /**************************** 辅助方法 ****************************/
+   /* *************************** 辅助方法 *************************** */
    //检查给定位置在列表中是否合法，若是，则将其转换为*DLNode
    protected DLNode checkPosition(Position p) throws ExceptionPositionInvalid {
       if (null == p)
@@ -37,7 +37,7 @@ public class List_DLNode implements List {
       return temp;
    }
 
-   /**************************** ADT方法 ****************************/
+   /* *************************** ADT方法 *************************** */
    //查询列表当前的规模
    public int getSize() { return numElem; }
 
@@ -160,3 +160,5 @@ public class List_DLNode implements List {
    public Iterator elements()
    { return new IteratorElement(this); }
 }
+
+

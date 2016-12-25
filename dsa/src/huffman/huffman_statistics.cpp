@@ -1,12 +1,12 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*DSA*/#include "Huffman_PQ.h"
+/* DSA */#include "Huffman_PQ.h"
 
 int* statistics ( char* sample_text_file ) { //统计字符出现频率
    int* freq = new int[N_CHAR];  //以下统计需随机访问，故以数组记录各字符出现次数
@@ -16,3 +16,4 @@ int* statistics ( char* sample_text_file ) { //统计字符出现频率
       if ( ch >= 0x20 ) freq[ch - 0x20]++; //累计对应的出现次数
    fclose ( fp ); return freq;
 }
+

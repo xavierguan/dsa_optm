@@ -1,12 +1,12 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*DSA*/#include "Huffman_PQ.h"
+/* DSA */#include "Huffman_PQ.h"
 
 static void //通过遍历获取各字符的编码
 generateCT ( Bitmap* code, int length, HuffTable* table, BinNodePosi ( HuffChar ) v ) {
@@ -22,3 +22,4 @@ HuffTable* generateTable ( HuffTree* tree ) { //将各字符编码统一存入�
    HuffTable* table = new HuffTable; Bitmap* code = new Bitmap;
    generateCT ( code, 0, table, tree->root() ); release ( code ); return table;
 };
+

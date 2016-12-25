@@ -1,10 +1,10 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
 #pragma once
 
@@ -15,7 +15,7 @@ Stack<Tv>* Graph<Tv, Te>::tSort ( int s ) { //assert: 0 <= s < n
    do {
       if ( UNDISCOVERED == status ( v ) )
          if ( !TSort ( v, clock, S ) ) { //clock并非必需
-            /*DSA*/print ( S );
+            /* DSA */print ( S );
             while ( !S->empty() ) //任一连通域（亦即整图）非DAG
                S->pop(); break; //则不必继续计算，故直接返回
          }
@@ -43,3 +43,4 @@ bool Graph<Tv, Te>::TSort ( int v, int& clock, Stack<Tv>* S ) { //assert: 0 <= v
    status ( v ) = VISITED; S->push ( vertex ( v ) ); //顶点被标记为VISITED时，随即入栈
    return true; //v及其后代可以拓扑排序
 }
+

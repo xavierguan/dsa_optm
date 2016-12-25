@@ -1,14 +1,14 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 基于列表实现（无序）词典结构
- */
+  */
 
 package  dsa;
 
@@ -24,7 +24,7 @@ public class Dictionary_DLNode implements Dictionary {
    public Dictionary_DLNode(EqualityTester t)
    {  L = new List_DLNode();  T = t; }
 
-   /***************************** ADT方法 *****************************/
+   /* **************************** ADT方法 **************************** */
    //查询词典结构当前的规模
    public int getSize()
    { return L.getSize(); }
@@ -83,3 +83,4 @@ public class Dictionary_DLNode implements Dictionary {
    public Iterator entries()
    {  return new IteratorElement(L); }//直接利用List接口的方法生成元素迭代器
 }
+

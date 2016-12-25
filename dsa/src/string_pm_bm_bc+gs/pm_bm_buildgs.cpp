@@ -1,12 +1,12 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*DSA*/#include "../string_pm/string_pm_test.h"
+/* DSA */#include "../string_pm/string_pm_test.h"
 
 int* buildSS ( char* P ) { //构造最大匹配后缀长度表：O(m)
    int m = strlen ( P ); int* ss = new int[m]; //Suffix Size表
@@ -21,10 +21,10 @@ int* buildSS ( char* P ) { //构造最大匹配后缀长度表：O(m)
             lo--; //逐个对比处于(lo, hi]前端的字符
          ss[j] = hi - lo;
       }
-   /*DSA*/printf ( "-- ss[] Table -------\n" );
-   /*DSA*/for ( int i = 0; i < m; i ++ ) printf ( "%4d", i ); printf ( "\n" );
-   /*DSA*/printString ( P ); printf ( "\n" );
-   /*DSA*/for ( int i = 0; i < m; i ++ ) printf ( "%4d", ss[i] ); printf ( "\n\n" );
+   /* DSA */printf ( "-- ss[] Table -------\n" );
+   /* DSA */for ( int i = 0; i < m; i ++ ) printf ( "%4d", i ); printf ( "\n" );
+   /* DSA */printString ( P ); printf ( "\n" );
+   /* DSA */for ( int i = 0; i < m; i ++ ) printf ( "%4d", ss[i] ); printf ( "\n\n" );
    return ss;
 }
 
@@ -38,6 +38,8 @@ int* buildGS ( char* P ) { //构造好后缀位移量表：O(m)
             gs[i++] = m - j - 1; //m - j - 1都是gs[i]的一种选择
    for ( size_t j = 0; j < m - 1; j ++ ) //画家算法：正向扫描P[]各字符，gs[j]不断递减，直至最小
       gs[m - ss[j] - 1] = m - j - 1; //m - j - 1必是其gs[m - ss[j] - 1]值的一种选择
-   /*DSA*/printGS ( P, gs );
+   /* DSA */printGS ( P, gs );
    delete [] ss; return gs;
 }
+
+

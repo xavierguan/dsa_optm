@@ -1,14 +1,14 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 基于链表节点实现二叉树节点
- */
+  */
 
 package dsa;
 
@@ -21,7 +21,7 @@ public class BinTreeNode implements BinTreePosition {
    protected int height;//高度
    protected int depth;//深度
 
-   /**************************** 构造方法 ****************************/
+   /* *************************** 构造方法 *************************** */
    public BinTreeNode()
    { this(null, null, true, null, null); }
 
@@ -42,7 +42,7 @@ public class BinTreeNode implements BinTreePosition {
       if (null != r) attachR(r);
    }
 
-   /**************************** Position接口方法 ********************************/
+   /* *************************** Position接口方法 ******************************* */
    //返回当前节点中存放的对象
    public Object getElem()
    { return element; }
@@ -51,7 +51,7 @@ public class BinTreeNode implements BinTreePosition {
    public Object setElem(Object obj)
    { Object bak = element; element = obj; return bak; }
 
-   /**************************** BinTreePosition接口方法 *************************/
+   /* *************************** BinTreePosition接口方法 ************************ */
    //判断是否有父亲（为使代码描述简洁）
    public boolean hasParent()
    { return null != parent; }
@@ -221,7 +221,7 @@ public class BinTreeNode implements BinTreePosition {
       return list.elements();
    }
 
-   /**************************** 辅助方法 ****************************/
+   /* *************************** 辅助方法 *************************** */
    //在v的后代中，找出最小者
    protected static BinTreePosition findMinDescendant(BinTreePosition v) {
       if (null != v)
@@ -274,3 +274,4 @@ public class BinTreeNode implements BinTreePosition {
       }
    }
 }
+

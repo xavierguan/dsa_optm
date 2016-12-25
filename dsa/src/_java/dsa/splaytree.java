@@ -1,25 +1,25 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 伸展树
  * 基于BSTree的扩充
- */
+  */
 
 package dsa;
 
 public class SplayTree extends BSTree implements Dictionary {
-   /**************************** 构造方法 ****************************/
+   /* *************************** 构造方法 *************************** */
    public SplayTree() { super(); }
    public SplayTree(BinTreePosition r) { super(r); }
    public SplayTree(BinTreePosition r, Comparator c) { super(r, c); }
 
-   /**************************** 词典方法（覆盖父类BSTree） ****************************/
+   /* *************************** 词典方法（覆盖父类BSTree） *************************** */
    //若词典中存在以key为关键码的条目，则返回其中的一个条目；否则，返回null
    public Entry find(Object key) {
       if (isEmpty()) return null;
@@ -42,7 +42,7 @@ public class SplayTree extends BSTree implements Dictionary {
       return e;
    }
 
-   /**************************** 辅助方法 ****************************/
+   /* *************************** 辅助方法 *************************** */
    //从节点z开始，自上而下重新平衡化
    protected static BinTreePosition moveToRoot(BinTreePosition z) {
       while (z.hasParent())
@@ -193,3 +193,4 @@ public class SplayTree extends BSTree implements Dictionary {
       return v;
    }
 }
+

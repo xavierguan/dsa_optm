@@ -1,14 +1,14 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 基于有序查找表实现的有序词典
- */
+  */
 
 package dsa;
 
@@ -24,7 +24,7 @@ public class SortedDictionary_ExtArray implements SortedDictionary {
    public SortedDictionary_ExtArray(Comparator comp)
    {  S = new Vector_ExtArray(); C = comp; }
 
-   /**************************** 辅助方法 ****************************/
+   /* *************************** 辅助方法 *************************** */
    //二分查找
    //返回值可能是命中元素的秩，也可能是key可以插入的秩
    //具体如何，需要进一步检查
@@ -39,7 +39,7 @@ public class SortedDictionary_ExtArray implements SortedDictionary {
       else return mi;//命中
    }
 
-   /**************************** 无序词典ADT方法 ****************************/
+   /* *************************** 无序词典ADT方法 *************************** */
    //查询词典结构当前的规模
    public int getSize()
    {  return S.getSize(); }
@@ -102,7 +102,7 @@ public class SortedDictionary_ExtArray implements SortedDictionary {
       return new IteratorElement(L);//直接利用List接口的方法生成元素迭代器
    }
 
-   /**************************** 有序词典ADT方法 ****************************/
+   /* *************************** 有序词典ADT方法 *************************** */
    //若词典非空，则返回其中关键码最小的条目；否则，返回null
    public Entry first()
    {  return (S.isEmpty()) ? null : (Entry) S.getAtRank(0); }
@@ -137,3 +137,4 @@ public class SortedDictionary_ExtArray implements SortedDictionary {
       return new IteratorElement(L);//由L创建迭代器，返回之
    }
 }
+

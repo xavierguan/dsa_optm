@@ -1,19 +1,19 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 基于链表实现的BST节点类
- */
+  */
 
 package dsa;
 
 public class BSTreeNode extends BinTreeNode implements BinTreePosition, Entry {
-   /**************************** 构造方法 ****************************/
+   /* *************************** 构造方法 *************************** */
    public BSTreeNode()
    { super(); }
 
@@ -25,7 +25,7 @@ public class BSTreeNode extends BinTreeNode implements BinTreePosition, Entry {
       BinTreePosition r)//右孩子
    {  super(e, p, asLChild, l, r); }
 
-   /**************************** 实现Entry接口的方法 ****************************/
+   /* *************************** 实现Entry接口的方法 *************************** */
    //返回当前节点的关键码
    public Object getKey()
    { return ((Entry)getElem()).getKey(); }
@@ -42,3 +42,4 @@ public class BSTreeNode extends BinTreeNode implements BinTreePosition, Entry {
    public Object setValue(Object v)
    { return ((Entry)getElem()).setValue(v); }
 }
+

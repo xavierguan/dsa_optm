@@ -1,10 +1,10 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
 #pragma once
 
@@ -18,6 +18,8 @@ template <typename T> void quickSelect ( Vector<T> & A, Rank k ) { //基于快�
       A[i] = pivot;
       if ( k <= i ) hi = i - 1;
       if ( i <= k ) lo = i + 1;
-      /*DSA*/print ( A ); for ( int i = 0; i < lo; i++ ) printf ( "     " ); for ( int i = lo; i <= hi; i++ ) printf ( "-----" ); printf ( "\n" );
+      /* DSA */print ( A ); for ( int i = 0; i < lo; i++ ) printf ( "     " ); for ( int i = lo; i <= hi; i++ ) printf ( "-----" ); printf ( "\n" );
    } //A[k] is now a pivot
 }
+
+

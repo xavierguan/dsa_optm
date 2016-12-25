@@ -1,25 +1,25 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * AVL树
  * 基于BSTree的扩充
- */
+  */
 
 package dsa;
 
 public class AVLTree extends BSTree implements Dictionary {
-   /**************************** 构造方法 ****************************/
+   /* *************************** 构造方法 *************************** */
    public AVLTree() { super(); }
    public AVLTree(BinTreePosition r) { super(r); }
    public AVLTree(BinTreePosition r, Comparator c) { super(r, c); }
 
-   /**************************** 词典方法（覆盖父类BSTree） ****************************/
+   /* *************************** 词典方法（覆盖父类BSTree） *************************** */
    //插入条目(key, value)，并返回该条目
    public Entry insert(Object key, Object value) {
       Entry e = super.insert(key, value);//调用父类方法完成插入
@@ -34,7 +34,7 @@ public class AVLTree extends BSTree implements Dictionary {
       return e;
    }
 
-   /**************************** 辅助方法 ****************************/
+   /* *************************** 辅助方法 *************************** */
    //从节点z开始，自上而下重新平衡化
    //返回后，root仍为平衡后的（整棵）树的根节点
    protected static BinTreePosition rebalance(BinTreePosition z, BinTreePosition r) {
@@ -64,7 +64,7 @@ public class AVLTree extends BSTree implements Dictionary {
       BinTreePosition   p = z.getParent();//p为z的父亲
       BinTreePosition   a, b, c;//自左向右，三个节点
       BinTreePosition   t0, t1, t2, t3;//自左向右，四棵子树
-      /******** 以下分四种情况 ********/
+      /* ******* 以下分四种情况 ******* */
       if (y.isLChild()) {//若y是左孩子，则
          c = z;   t3 = z.getRChild();
          if (x.isLChild()) {//若x是左孩子
@@ -123,3 +123,5 @@ public class AVLTree extends BSTree implements Dictionary {
       else                    return v.getLChild();
    }
 }
+
+

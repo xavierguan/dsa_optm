@@ -1,10 +1,10 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
 #pragma once
 
@@ -39,9 +39,10 @@ public:
    { return _root && t._root && lt ( _root, t._root ); }
    bool operator== ( BinTree<T> const& t ) //判等器
    { return _root && t._root && ( _root == t._root ); }
-   /*DSA*/
-   /*DSA*/void stretchToLPath() { stretchByZag ( _root ); } //借助zag旋转，转化为左向单链
-   /*DSA*/void stretchToRPath() { stretchByZig ( _root, _size ); } //借助zig旋转，转化为右向单链
+   /* DSA */
+   /* DSA */void stretchToLPath() { stretchByZag ( _root ); } //借助zag旋转，转化为左向单链
+   /* DSA */void stretchToRPath() { stretchByZig ( _root, _size ); } //借助zig旋转，转化为右向单链
 }; //BinTree
 
 #include "BinTree_implementation.h"
+

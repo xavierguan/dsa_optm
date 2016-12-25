@@ -1,28 +1,28 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 基于链表实现二叉树
- */
+  */
 
 package dsa;
 
 public class BinTree_LinkedList implements BinTree {
    protected BinTreePosition root;//根节点
 
-   /**************************** 构造函数 ****************************/
+   /* *************************** 构造函数 *************************** */
    public BinTree_LinkedList()
    { this(null); }
 
    public BinTree_LinkedList(BinTreePosition r)
    { root = r; }
 
-   /**************************** BinaryTree接口方法 ****************************/
+   /* *************************** BinaryTree接口方法 *************************** */
    //返回树根
    public BinTreePosition getRoot()
    { return root; }
@@ -55,3 +55,4 @@ public class BinTree_LinkedList implements BinTree {
    public Iterator elementsLevelorder()
    { return root.elementsLevelorder(); }
 }
+

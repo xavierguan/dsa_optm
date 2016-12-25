@@ -1,24 +1,24 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 基于链表式BST实现的词典结构
  * 基于BinTree进行扩充
- */
+  */
 
 package dsa;
 
 public class BSTree extends BinTree_LinkedList implements Dictionary {
-   /**************************** 实例变量 ****************************/
+   /* *************************** 实例变量 *************************** */
    protected Comparator C;//比较器
    protected BinTreePosition lastV;//最后操作的节点，以便AVL树、伸展树重平衡
 
-   /**************************** 构造方法 ****************************/
+   /* *************************** 构造方法 *************************** */
    public BSTree()
    { this(null, new ComparatorDefault()); }
 
@@ -28,7 +28,7 @@ public class BSTree extends BinTree_LinkedList implements Dictionary {
    public BSTree(BinTreePosition r, Comparator c)
    {  root = r;   C = c; }
 
-   /**************************** 词典方法 ****************************/
+   /* *************************** 词典方法 *************************** */
    //若词典中存在以key为关键码的条目，则返回其中的一个条目；否则，返回null
    public Entry find(Object key) {
       if (isEmpty()) return null;
@@ -104,7 +104,7 @@ public class BSTree extends BinTree_LinkedList implements Dictionary {
       return list.elements();
    }
 
-   /**************************** 辅助方法 ****************************/
+   /* *************************** 辅助方法 *************************** */
    //在以v为根的子树中查找关键码为key的节点（假设该子树不为空）
    //  若找到，则返回该节点
    //  否则，返回被访问的最后一个节点
@@ -146,3 +146,4 @@ public class BSTree extends BinTree_LinkedList implements Dictionary {
       concatenate(list, (BSTreeNode) v.getRChild());
    }
 }
+

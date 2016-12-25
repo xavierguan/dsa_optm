@@ -1,14 +1,14 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 利用堆实现优先队列
- */
+  */
 
 package dsa;
 
@@ -38,7 +38,7 @@ public class PQueue_Heap implements PQueue {
       }
    }
 
-   /*-------- PQueue接口中定义的方法 --------*/
+   /* -------- PQueue接口中定义的方法 -------- */
    //统计优先队列的规模
    public int getSize()
    { return H.getSize(); }
@@ -75,7 +75,7 @@ public class PQueue_Heap implements PQueue {
       return min;//返回原堆顶
    }
 
-   /*-------- 辅助方法 --------*/
+   /* -------- 辅助方法 -------- */
    //检查关键码的可比较性
    protected void checkKey(Object key) throws ExceptionKeyInvalid {
       try {
@@ -90,7 +90,7 @@ public class PQueue_Heap implements PQueue {
       return ((Entry)(v.getElem())).getKey();
    }
 
-   /*-------- 算法方法 --------*/
+   /* -------- 算法方法 -------- */
    //交换父子节点（中所存放的内容）
    protected void swapParentChild(BinTreePosition u, BinTreePosition v) {
       Object temp = u.getElem();
@@ -121,3 +121,4 @@ public class PQueue_Heap implements PQueue {
       }
    }
 }
+

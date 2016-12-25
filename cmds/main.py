@@ -11,9 +11,10 @@ def checkFolder(root):
 
             if ext == '.h' or ext == '.cpp' or ext == '.java':
                 # changeEncoding(fullPath)
+                fixError(fullPath)
                 pass
             if ext == '.filters':
-                filtersZh2En(fullPath)
+                # filtersZh2En(fullPath)
                 pass
 
 
@@ -21,6 +22,19 @@ def checkFolder(root):
 def changeEncoding(path):
     content = open(path, 'r', encoding='gbk').read()
     newFile = open(path, 'w', encoding='utf-8')
+    newFile.write(content)
+    newFile.close()
+
+
+# 最后一行没有换行，会造成报错; /*中文注释*/ 这样也会报错，要改成 /* 中文注释 */
+def fixError(path):
+    content = open(path, 'r', encoding='utf-8').read()
+    newFile = open(path, 'w', encoding='utf-8')
+
+    content = content.replace('/*', '/* ')
+    content = content.replace('*/', ' */')
+    # content = content + '\n'
+
     newFile.write(content)
     newFile.close()
 

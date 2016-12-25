@@ -1,23 +1,23 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*DSA*/#include "../_share/util.h"
-/*DSA*/#include "../random/shuffle.h"
-/*DSA*/#include "../UniPrint/print_int_array.h"
+/* DSA */#include "../_share/util.h"
+/* DSA */#include "../random/shuffle.h"
+/* DSA */#include "../UniPrint/print_int_array.h"
 
-/*DSA*/void bubblesort ( int A[], int n ); //algorithm#0
-/*DSA*/void bubblesort1A ( int A[], int n ); //algorithm#1A
-/*DSA*/void bubblesort1B ( int A[], int n ); //algorithm#1B
-/*DSA*/void bubblesort2 ( int A[], int n ); //algorithm#2
+/* DSA */void bubblesort ( int A[], int n ); //algorithm#0
+/* DSA */void bubblesort1A ( int A[], int n ); //algorithm#1A
+/* DSA */void bubblesort1B ( int A[], int n ); //algorithm#1B
+/* DSA */void bubblesort2 ( int A[], int n ); //algorithm#2
 
-/******************************************************************************************
+/* *****************************************************************************************
  * 构造随机数组（可根据测试需要相应地改写）
- ******************************************************************************************/
+ ***************************************************************************************** */
 void randomArray ( int A[], int n, int seed ) {
    srand ( seed );
    for ( int i = 0; i < n; i++ ) A[i] = i;
@@ -25,9 +25,9 @@ void randomArray ( int A[], int n, int seed ) {
    shuffle ( A, 2 * n / 3, n );
 }
 
-/******************************************************************************************
+/* *****************************************************************************************
  * 起泡排序测试程序
- ******************************************************************************************/
+ ***************************************************************************************** */
 void main ( int argc, char* argv[] ) {
    int n = 0; //array length
    if ( 1 < argc ) n = atoi ( argv[1] ); if ( n < 0 ) n = 0; //make sure length is non-negative
@@ -55,3 +55,4 @@ void main ( int argc, char* argv[] ) {
    printf ( "==>  " ); print ( A, n );
    free ( A ); //release the array
 }
+

@@ -1,10 +1,10 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
 #pragma once
 
@@ -16,5 +16,6 @@ template <typename T> void Vector<T>::sort ( Rank lo, Rank hi ) { //向量区间
       case 4:  heapSort ( lo, hi ); break; //堆排序（稍后介绍）
       default: quickSort ( lo, hi ); break; //快速排序（稍后介绍）
    }
-   /*DSA*/ //selectionSort(lo, hi);
+   /* DSA */ //selectionSort(lo, hi);
 }
+

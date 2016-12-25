@@ -1,12 +1,12 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*DSA*/#include "Huffman_PQ.h"
+/* DSA */#include "Huffman_PQ.h"
 
 HuffForest* initForest ( int* freq ) { //根据频率统计表，为每个字符创建一棵树
    HuffForest* forest = new HuffForest; //以List实现的Huffman森林
@@ -16,3 +16,4 @@ HuffForest* initForest ( int* freq ) { //根据频率统计表，为每个字符
    }
    return forest;
 }
+

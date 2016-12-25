@@ -1,14 +1,14 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*
+/* 
  * 基于向量实现的完全二叉树
- */
+  */
 
 package dsa;
 
@@ -23,7 +23,7 @@ public class ComplBinTree_Vector extends BinTree_LinkedList implements ComplBinT
    public ComplBinTree_Vector(Sequence s)
    { this();   if (null != s) while (!s.isEmpty()) addLast(s.removeFirst()); }
 
-   /*---------- BinaryTree接口中各方法的实现 ----------*/
+   /* ---------- BinaryTree接口中各方法的实现 ---------- */
    //返回树根（重写）
    public BinTreePosition getRoot()
    { return T.isEmpty() ? null : posOfNode(0); }
@@ -40,7 +40,7 @@ public class ComplBinTree_Vector extends BinTree_LinkedList implements ComplBinT
    public int getHeight()
    {return isEmpty() ? -1 : getRoot().getHeight(); }
 
-   /*---------- ComplBinTree接口中各方法的实现 ----------*/
+   /* ---------- ComplBinTree接口中各方法的实现 ---------- */
    //生成并返回一个存放e的外部节点，该节点成为新的末节点
    public BinTreePosition addLast(Object e) {
       BinTreePosition node = new ComplBinTreeNode_Rank(T, e);
@@ -60,3 +60,5 @@ public class ComplBinTree_Vector extends BinTree_LinkedList implements ComplBinT
       return (BinTreePosition)T.getAtRank(i);
    }
 }
+
+

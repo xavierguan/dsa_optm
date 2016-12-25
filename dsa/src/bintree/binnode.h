@@ -1,10 +1,10 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
 #pragma once
 
@@ -37,9 +37,10 @@ template <typename T> struct BinNode { //二叉树节点模板类
 // 比较器、判等器（各列其一，其余自行补充）
    bool operator< ( BinNode const& bn ) { return data < bn.data; } //小于
    bool operator== ( BinNode const& bn ) { return data == bn.data; } //等于
-   /*DSA*/
-   /*DSA*/BinNodePosi(T) zig(); //顺时针旋转
-   /*DSA*/BinNodePosi(T) zag(); //逆时针旋转
+   /* DSA */
+   /* DSA */BinNodePosi(T) zig(); //顺时针旋转
+   /* DSA */BinNodePosi(T) zag(); //逆时针旋转
 };
 
 #include "BinNode_implementation.h"
+

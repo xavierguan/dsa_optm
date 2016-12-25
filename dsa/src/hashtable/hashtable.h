@@ -1,10 +1,10 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
 #pragma once
 
@@ -13,7 +13,7 @@
 
 template <typename K, typename V> //key、value
 class Hashtable : public Dictionary<K, V> { //符合Dictionary接口的Hashtable模板类
-   /*DSA*/friend class UniPrint;
+   /* DSA */friend class UniPrint;
 private:
    Entry<K, V>** ht; //桶数组，存放词条指针
    int M; //桶数组容量
@@ -35,3 +35,5 @@ public:
 };
 
 #include "Hashtable_implementation.h"
+
+

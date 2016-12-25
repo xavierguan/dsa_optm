@@ -1,12 +1,12 @@
-/******************************************************************************************
+/* *****************************************************************************************
  * Data Structures in C++
  * ISBN: 7-302-33064-6 & 7-302-33065-3 & 7-302-29652-2 & 7-302-26883-3
  * Junhui DENG, deng@tsinghua.edu.cn
  * Computer Science & Technology, Tsinghua University
  * Copyright (c) 2006-2013. All rights reserved.
- ******************************************************************************************/
+ ***************************************************************************************** */
 
-/*DSA*/#include "rpn.h"
+/* DSA */#include "rpn.h"
 
 Operator optr2rank ( char op ) { //由运算符转译出编号
    switch ( op ) {
@@ -25,3 +25,5 @@ Operator optr2rank ( char op ) { //由运算符转译出编号
 
 char orderBetween ( char op1, char op2 ) //比较两个运算符之间的优先级
 { return pri[optr2rank ( op1 ) ][optr2rank ( op2 ) ]; }
+
+
