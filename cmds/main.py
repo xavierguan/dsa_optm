@@ -13,7 +13,7 @@ def checkFolder(root):
                 # changeEncoding(fullPath)
                 pass
             if ext == '.filters':
-                # filtersZh2En(fullPath)
+                filtersZh2En(fullPath)
                 pass
 
 
@@ -25,17 +25,17 @@ def changeEncoding(path):
     newFile.close()
 
 
-# 将 .filters 文件中的中文替换为英文，无法替换？？？
+# 将 .filters 文件中的中文替换为英文
 def filtersZh2En(path):
-    print('<<< ' + path)
     content = open(path, 'r', encoding='utf-8').read()
-    # newFile = open(path, 'w', encoding='utf-8')
-    content.replace('头文件', 'Header Files')
-    content.replace('源文件', 'Source Files')
-    content.replace('资源文件', 'Resource Files')
-    print(content)
-    # newFile.write(content)
-    # newFile.close()
+    newFile = open(path, 'w', encoding='utf-8')
+
+    content = content.replace('头文件', 'Header Files')
+    content = content.replace('源文件', 'Source Files')
+    content = content.replace('资源文件', 'Resource Files')
+
+    newFile.write(content)
+    newFile.close()
 
 
 
