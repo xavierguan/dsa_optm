@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../nest_stack/nest.h"
+/* dsa */#include "../nest_stack/nest.h"
 
 void trim ( const char exp[], int& lo, int& hi ) { //删除exp[lo, hi]不含括号的最长前缀、后缀
    while ( ( lo <= hi ) && ( exp[lo] != '(' ) && ( exp[lo] != ')' ) ) lo++; //查找第一个和

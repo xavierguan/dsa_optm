@@ -8,6 +8,6 @@
 
 #pragma once
 
-#include "../Bitmap/Bitmap.h" //基于Bitmap实现
+#include "../bitmap/bitmap.h" //基于bitmap实现
 typedef Bitmap HuffCode; //Huffman二进制编码
 

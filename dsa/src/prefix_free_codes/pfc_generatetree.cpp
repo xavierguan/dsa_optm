@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "PFC.h"
+/* dsa */#include "pfc.h"
 
 PFCTree* generateTree ( PFCForest* forest ) { //构造PFC树
    srand ( ( unsigned int ) time ( NULL ) ); //这里将随机取树合并，故先设置随机种子

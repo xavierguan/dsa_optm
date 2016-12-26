@@ -6,8 +6,8 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../string_pm/string_pm_test.h"
-/* DSA */#include "pm_kr.h"
+/* dsa */#include "../string_pm/string_pm_test.h"
+/* dsa */#include "pm_kr.h"
 
 int match ( char* P, char* T ) { //串匹配算法（Karp-Rabin）
    size_t m = strlen ( P ), n = strlen ( T ); //assert: m <= n

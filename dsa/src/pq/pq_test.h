@@ -12,14 +12,14 @@
 using namespace std;
 
 #include "../_share/util.h"
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 
 #if defined(DSA_PQ_LEFTHEAP)
-#include "../PQ_LeftHeap/PQ_LeftHeap.h"
+#include "../pq_leftheap/pq_leftheap.h"
 #elif defined(DSA_PQ_COMPLHEAP)
-#include "../PQ_ComplHeap/PQ_ComplHeap.h"
+#include "../pq_complheap/pq_complheap.h"
 #elif defined(DSA_PQ_LIST)
-#include "../PQ_List/PQ_List.h"
+#include "../pq_list/pq_list.h"
 #endif
 
 

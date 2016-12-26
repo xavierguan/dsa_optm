@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include "../Hashtable/Hashtable.h" //用HashTable实现
+#include "../hashtable/hashtable.h" //用hashtable实现
 typedef Hashtable<char, char*> HuffTable; //Huffman编码表
 
 

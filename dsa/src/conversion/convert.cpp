@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "convert.h"
+/* dsa */#include "convert.h"
 
 void convert ( Stack<char>& S, __int64 n, int base ) { //十进制数n到base进制的转换（迭代版）
    static char digit[] //0 < n, 1 < base <= 16，新进制下的数位符号，可视base取值范围适当扩充

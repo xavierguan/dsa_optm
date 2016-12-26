@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-#include "Splay_test.h"
+#include "splay_test.h"
 
 template <typename T> void  testSplayPeriod ( int n ) { //周期性访问测试
    Splay<T> splay;

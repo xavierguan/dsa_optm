@@ -10,7 +10,7 @@
 #include <iostream>
 using namespace std;
 #include "../random/shuffle.h"
-#include "../UniPrint/print_int_array.h"
+#include "../uniprint/print_int_array.h"
 #include "../reverse/reverse.h"
 #include "../sum/sum.h"
 

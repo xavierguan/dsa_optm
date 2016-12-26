@@ -12,8 +12,8 @@
 using namespace std;
 
 #include "../_share/util.h"
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 
-#include "AVL.h"
+#include "avl.h"
 
 

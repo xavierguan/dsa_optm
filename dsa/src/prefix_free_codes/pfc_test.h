@@ -14,9 +14,9 @@
 using namespace std;
 
 #include "../_share/util.h"
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 
-#include "PFC.h"
+#include "pfc.h"
 
 extern PFCForest* initForest(); //创建编码树森林
 extern PFCTree* generateTree ( PFCForest* ); //构造编码树

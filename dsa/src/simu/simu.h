@@ -15,7 +15,7 @@
 #include <limits.h>
 
 #include "../queue/queue.h" //引入队列
-#include "Customer.h" //顾客类
+#include "customer.h" //顾客类
 
 int bestWindow ( Queue<Customer> window[], int nWin );
 void printCustomer ( Customer c );

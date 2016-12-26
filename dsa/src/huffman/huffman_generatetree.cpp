@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "huffman_PQ.h"
+/* dsa */#include "huffman_pq.h"
 
 HuffTree* minHChar ( HuffForest* forest ) { //在Huffman森林中找出权重最小的（超）字符
    ListNodePosi ( HuffTree* ) p = forest->first(); //从首节点出发查找

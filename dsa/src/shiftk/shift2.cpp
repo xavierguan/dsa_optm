@@ -6,8 +6,8 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../reverse/reverse.h"
-/* DSA */#include "../UniPrint/print_int_array.h"
+/* dsa */#include "../reverse/reverse.h"
+/* dsa */#include "../uniprint/print_int_array.h"
 
 int shift2 ( int* A, int n, int k ) { //借助倒置算法，将数组循环左移k位，O(3n)
    k %= n; //确保k <= n

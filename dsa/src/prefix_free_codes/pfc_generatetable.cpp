@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "PFC.h"
+/* dsa */#include "pfc.h"
 
 void generateCT //通过遍历获取各字符的编码
 ( Bitmap* code, int length, PFCTable* table, BinNodePosi ( char ) v ) {

@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include <iostream>
+/* dsa */#include <iostream>
 /* DSA */using namespace std;
 
 void shuffle ( int A[], int n ) { //将A[0, n)随机打乱

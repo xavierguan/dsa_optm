@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "simu.h"
+/* dsa */#include "simu.h"
 
 void simulate ( int nWin, int servTime ) { //按指定窗口数、服务总时间模拟银行业务
    Queue<Customer>* windows = new Queue<Customer>[nWin]; //为每一窗口创建一个队列

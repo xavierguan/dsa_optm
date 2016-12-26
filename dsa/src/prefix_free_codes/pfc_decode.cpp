@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "PFC.h"
+/* dsa */#include "pfc.h"
 
 void decode ( PFCTree* tree, Bitmap& code, int n ) { //PFC解码算法
    BinNodePosi ( char ) x = tree->root(); //根据PFC编码树

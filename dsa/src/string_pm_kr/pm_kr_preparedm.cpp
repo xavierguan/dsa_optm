@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "pm_kr.h"
+/* dsa */#include "pm_kr.h"
 
 HashCode prepareDm ( size_t m ) { //预处理：计算R^(m - 1) % M （仅需调用一次，不必优化）
    HashCode  Dm = 1;

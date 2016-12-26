@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "fac.h"
+/* dsa */#include "fac.h"
 
 int main ( int argc, char* argv[] ) { //阶乘运算测试
    for ( int i = 0; i < 25; i++ )

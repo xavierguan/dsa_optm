@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../string_pm/string_pm_test.h"
+/* dsa */#include "../string_pm/string_pm_test.h"
 
 int* buildSS ( char* P ) { //构造最大匹配后缀长度表：O(m)
    int m = strlen ( P ); int* ss = new int[m]; //Suffix Size表

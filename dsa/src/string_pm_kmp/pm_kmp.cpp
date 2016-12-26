@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../string_pm/string_pm_test.h"
+/* dsa */#include "../string_pm/string_pm_test.h"
 
 int match ( char* P, char* T ) {  //KMP算法
    int* next = buildNext ( P ); //构造next表

@@ -11,7 +11,7 @@
 #include<iostream>
 using namespace std;
 
-#include "List.h"
-#include "../UniPrint/print.h"
+#include "list.h"
+#include "../uniprint/print.h"
 
 

@@ -8,7 +8,7 @@
 
 #pragma once
 
-/* DSA */#include <string.h>
+/* dsa */#include <string.h>
 
 #define M 97 //散列表长度：既然这里并不需要真地存储散列表，不妨取更大的素数，以降低误判的可能
 #define R 10 //基数：对于二进制串，取2；对于十进制串，取10；对于ASCII字符串，取128或256

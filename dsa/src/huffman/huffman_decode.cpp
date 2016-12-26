@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "Huffman_PQ.h"
+/* dsa */#include "huffman_pq.h"
 
 // 根据编码树对长为n的Bitmap串做Huffman解码
 void decode ( HuffTree* tree, Bitmap* code, int n ) {

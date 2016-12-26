@@ -8,6 +8,6 @@
 
 #pragma once
 
-#include "../PQ_ComplHeap/PQ_ComplHeap.h" //用PQ_ComplHeap实现
+#include "../pq_complheap/pq_complheap.h" //用pq_complheap实现
 typedef PQ_ComplHeap<HuffTree*> HuffForest; //Huffman森林
 

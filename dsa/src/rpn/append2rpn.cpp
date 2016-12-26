@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "rpn.h"
+/* dsa */#include "rpn.h"
 
 void append ( char*& rpn, float opnd ) { //将操作数接至RPN末尾
    int n = strlen ( rpn ); //RPN当前长度（以'\0'结尾，长度n + 1）

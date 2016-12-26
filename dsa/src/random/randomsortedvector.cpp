@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 #include "../vector/vector.h"
 
 Vector<int> //生成长度为n的随机有序向量，元素取值来自[min, max]

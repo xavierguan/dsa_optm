@@ -15,7 +15,7 @@ using namespace std;
 #include <stdlib.h>
 #include <string.h>
 
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 
 #include "../stack/stack.h"
 

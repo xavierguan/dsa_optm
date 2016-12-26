@@ -8,7 +8,7 @@
 
 #include "../_share/util.h"
 #include "../stack/stack.h" //使用栈
-#include "Cell.h" //迷宫格点类
+#include "cell.h" //迷宫格点类
 
 int labySize;
 Cell* startCell;
@@ -17,11 +17,11 @@ Cell* goalCell;
 #include "neighbor.h"
 #include "advance.h"
 
-#include "displayLaby.h"
+#include "displaylaby.h"
 #include "laby.h"
 
-#include "randLaby.h"
-#include "readLaby.h"
+#include "randlaby.h"
+#include "readlaby.h"
 
 /* *****************************************************************************************
  * 迷宫寻径

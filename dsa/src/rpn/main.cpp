@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "rpn.h"
+/* dsa */#include "rpn.h"
 
 char* removeSpace ( char* s ) { //剔除s[]中的白空格
    char* p = s, *q = s;

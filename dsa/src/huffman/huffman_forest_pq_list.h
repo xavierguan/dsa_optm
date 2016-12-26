@@ -8,6 +8,6 @@
 
 #pragma once
 
-#include "../PQ_List/PQ_List.h" //用PQ_List实现
+#include "../pq_list/pq_list.h" //用pq_list实现
 typedef PQ_List<HuffTree*> HuffForest; //Huffman森林
 

@@ -8,9 +8,9 @@
 
 #include <stdio.h>
 #include "../_share/rand.h"
-#include "../Bitmap/Bitmap.h"
-#include "Eratosthenes.h"
-#include "primeNLT.h"
+#include "../bitmap/bitmap.h"
+#include "eratosthenes.h"
+#include "primenlt.h"
 
 /* *****************************************************************************************
  * 主函数

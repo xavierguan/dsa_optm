@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "pm_kr.h"
+/* dsa */#include "pm_kr.h"
 
 // 子串指纹快速更新算法
 void updateHash ( HashCode& hashT, char* T, size_t m, size_t k, HashCode Dm ) {

@@ -8,6 +8,6 @@
 
 #pragma once
 
-#include "../PQ_LEFTHeap/PQ_LeftHeap.h" //用PQ_LeftHeap实现
+#include "../pq_leftheap/pq_leftheap.h" //用pq_leftheap实现
 typedef PQ_LeftHeap<HuffTree*> HuffForest; //Huffman森林
 

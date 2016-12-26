@@ -14,9 +14,9 @@
 using namespace std;
 
 #include "../_share/util.h"
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 
-#include "huffman_PQ.h"
+#include "huffman_pq.h"
 
 extern int* statistics ( char* ); //根据样本文件统计各字符出现频率
 extern HuffForest* initForest ( int* ); //创建编码树森林

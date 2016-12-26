@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "PFC.h"
+/* dsa */#include "pfc.h"
 
 int encode ( PFCTable* table, Bitmap& codeString, char* s ) { //PFC编码算法
    int n = 0;

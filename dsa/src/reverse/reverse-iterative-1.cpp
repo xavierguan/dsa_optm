@@ -6,8 +6,8 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../_share/util.h"
-/* DSA */#include "../UniPrint/print_int_array.h"
+/* dsa */#include "../_share/util.h"
+/* dsa */#include "../uniprint/print_int_array.h"
 
 void reverse ( int* A, int lo, int hi ) { //数组倒置（规范整理之后的迭代版）
    while ( lo < hi ) //用while替换跳转标志和if，完全等效

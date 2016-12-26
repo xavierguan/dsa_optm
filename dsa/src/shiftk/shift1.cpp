@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../UniPrint/print_int_array.h"
+/* dsa */#include "../uniprint/print_int_array.h"
 /* DSA */int shift ( int* A, int n, int s, int t ); //从A[s]出发，以t为间隔循环左移，O(3n)
 
 int shift1 ( int* A, int n, int k ) { //通过GCD(n, k)轮迭代，将数组循环左移k位，O(n)

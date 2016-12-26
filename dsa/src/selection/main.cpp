@@ -11,9 +11,9 @@
 #include <stdlib.h>
 #include <time.h>
 #include "../_share/util.h"
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 #include "../vector/vector.h"
-#include "quickSelect.h"
+#include "quickselect.h"
 
 int main ( int argc, char* argv[] ) { //基于快速划分的k选取算法测试
    if ( 2 > argc ) { printf ( "Usage: %s <n>\a\a\n", argv[0] ); return 1; }

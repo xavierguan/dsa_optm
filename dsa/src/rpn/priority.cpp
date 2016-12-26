@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "rpn.h"
+/* dsa */#include "rpn.h"
 
 Operator optr2rank ( char op ) { //由运算符转译出编号
    switch ( op ) {

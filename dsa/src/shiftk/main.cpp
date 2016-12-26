@@ -7,7 +7,7 @@
  ***************************************************************************************** */
 
 #include <iostream>
-#include "../UniPrint/print_int_array.h"
+#include "../uniprint/print_int_array.h"
 
 int shift0 ( int* A, int n, int k ); //蛮力版
 int shift1 ( int* A, int n, int k ); //迭代版

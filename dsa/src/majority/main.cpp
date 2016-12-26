@@ -11,11 +11,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include "../_share/util.h"
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 #include "../vector/vector.h"
 #include "majority.h"
-#include "majorityCandidate.h"
-#include "majorityCheck.h"
+#include "majoritycandidate.h"
+#include "majoritycheck.h"
 
 /* *****************************************************************************************
  * 众数算法测试

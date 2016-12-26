@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "Huffman_PQ.h"
+/* dsa */#include "huffman_pq.h"
 
 int encode ( HuffTable* table, Bitmap* codeString, char* s ) { //按照编码表对Bitmap串编码
    int n = 0; //待返回的编码串总长n

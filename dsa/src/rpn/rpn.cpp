@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "RPN.h"
+/* dsa */#include "rpn.h"
 
 float evaluate ( char* S, char*& RPN ) { //对（已剔除白空格的）表达式S求值，并转换为逆波兰式RPN
    Stack<float> opnd; Stack<char> optr; //运算数栈、运算符栈 /* DSA */任何时刻，其中每对相邻元素之间均大小一致

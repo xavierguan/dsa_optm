@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "PFC_test.h"
+/* dsa */#include "pfc_test.h"
 int main ( int argc, char* argv[] ) { //PFC编码、解码算法统一测试入口
    /* DSA */if ( 2 > argc ) { printf ( "Usage: %s <message#1> [message#2] ...\a\n", argv[0] ); return -1; }
    PFCForest* forest = initForest(); //初始化PFC森林

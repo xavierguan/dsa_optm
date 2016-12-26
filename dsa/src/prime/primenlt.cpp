@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../Bitmap/Bitmap.h"
+/* dsa */#include "../bitmap/bitmap.h"
 
 int primeNLT ( int c, int n, char* file ) { //根据file文件中的记录，在[c, n)内取最小的素数
    Bitmap B ( file, n ); //file已经按位图格式，记录了n以内的所有素数，因此只要

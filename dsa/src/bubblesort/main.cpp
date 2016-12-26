@@ -6,9 +6,9 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../_share/util.h"
-/* DSA */#include "../random/shuffle.h"
-/* DSA */#include "../UniPrint/print_int_array.h"
+/* dsa */#include "../_share/util.h"
+/* dsa */#include "../random/shuffle.h"
+/* dsa */#include "../uniprint/print_int_array.h"
 
 /* DSA */void bubblesort ( int A[], int n ); //algorithm#0
 /* DSA */void bubblesort1A ( int A[], int n ); //algorithm#1A

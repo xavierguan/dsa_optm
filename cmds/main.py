@@ -1,57 +1,34 @@
 import sys, os
 
+import fileSln
+import fileCode
+import fileFilters
+
+
 
 # 遍历目录
-def checkFolder(root):
+def main(root):
+    global rootProPath
+
     for dirPath, dirNames, fileNames in os.walk(root):
         for fileName in fileNames:
             fullPath = os.path.join(dirPath, fileName)
 
             ext = os.path.splitext(fullPath)[1]
 
+            if ext == '.sln':
+                tmpPath = fileSln.fix(fullPath)
+                if tmpPath != '':
+                    rootProPath = tmpPath
             if ext == '.h' or ext == '.cpp' or ext == '.java':
-                # changeEncoding(fullPath)
-                fixError(fullPath)
-                pass
+                fileCode.fix(fullPath)
             if ext == '.filters':
-                # filtersZh2En(fullPath)
-                pass
-
-
-# 将源代码从 gb2312 改为 utf-8
-def changeEncoding(path):
-    content = open(path, 'r', encoding='gbk').read()
-    newFile = open(path, 'w', encoding='utf-8')
-    newFile.write(content)
-    newFile.close()
-
-
-# 最后一行没有换行，会造成报错; /*中文注释*/ 这样也会报错，要改成 /* 中文注释 */
-def fixError(path):
-    content = open(path, 'r', encoding='utf-8').read()
-    newFile = open(path, 'w', encoding='utf-8')
-
-    content = content.replace('/*', '/* ')
-    content = content.replace('*/', ' */')
-    # content = content + '\n'
-
-    newFile.write(content)
-    newFile.close()
-
-
-# 将 .filters 文件中的中文替换为英文
-def filtersZh2En(path):
-    content = open(path, 'r', encoding='utf-8').read()
-    newFile = open(path, 'w', encoding='utf-8')
-
-    content = content.replace('头文件', 'Header Files')
-    content = content.replace('源文件', 'Source Files')
-    content = content.replace('资源文件', 'Resource Files')
-
-    newFile.write(content)
-    newFile.close()
+                fileFilters.fix(fullPath)
 
 
 
-rootPath = sys.argv[1]
-checkFolder(rootPath)
+if __name__ == "__main__":
+    global rootProPath
+    rootPath = sys.argv[1]
+    main(rootPath)
+    print('rootProPath: ' + rootProPath)

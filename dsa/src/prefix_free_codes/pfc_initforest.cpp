@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "PFC.h"
+/* dsa */#include "pfc.h"
 
 PFCForest* initForest() { //PFC编码森林初始化
    PFCForest* forest = new PFCForest; //首先创建空森林，然后

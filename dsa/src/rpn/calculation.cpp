@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "rpn.h"
+/* dsa */#include "rpn.h"
 float calcu ( float a, char op, float b ) { //执行二元运算
    switch ( op ) {
       case '+' : return a + b;

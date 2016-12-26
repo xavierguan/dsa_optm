@@ -11,10 +11,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include "../_share/util.h"
-#include "../UniPrint/print.h"
+#include "../uniprint/print.h"
 #include "../vector/vector.h"
-#include "../random/randomSortedVector.h"
-#include "../median1/trivialMedian.h"
+#include "../random/randomsortedvector.h"
+#include "../median1/trivialmedian.h"
 #include "median.h"
 
 /* *****************************************************************************************

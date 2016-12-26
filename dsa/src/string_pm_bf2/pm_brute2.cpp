@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include <stdio.h>
+/* dsa */#include <stdio.h>
 #include <string.h>
 /* DSA */void showProgress ( char*, char*, int, int );
 

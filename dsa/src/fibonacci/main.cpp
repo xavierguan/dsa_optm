@@ -10,7 +10,7 @@
 #include<iostream>
 using namespace std;
 
-#include "Fib.h"
+#include "fib.h"
 
 __int64  fibI ( int n ); //迭代版
 __int64  fib ( int n ); //二分递归版

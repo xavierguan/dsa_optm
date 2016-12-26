@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "Huffman_PQ.h"
+/* dsa */#include "huffman_pq.h"
 
 HuffForest* initForest ( int* freq ) { //根据频率统计表，为每个字符创建一棵树
    HuffForest* forest = new HuffForest; //以List实现的Huffman森林

@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "Huffman_PQ.h"
+/* dsa */#include "huffman_pq.h"
 
 static void //通过遍历获取各字符的编码
 generateCT ( Bitmap* code, int length, HuffTable* table, BinNodePosi ( HuffChar ) v ) {

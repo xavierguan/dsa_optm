@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "../string_pm/string_pm_test.h"
+/* dsa */#include "../string_pm/string_pm_test.h"
 
 int match ( char* P, char* T ) { //Boyer-Morre算法（完全版，兼顾Bad Character与Good Suffix）
    int* bc = buildBC ( P ); int* gs = buildGS ( P ); //构造BC表和GS表

@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-#include "binTree_test.h"
+#include "bintree_test.h"
 
 int testID = 0; //测试编号
 

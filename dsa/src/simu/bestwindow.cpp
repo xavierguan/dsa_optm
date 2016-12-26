@@ -6,7 +6,7 @@
  * Copyright (c) 2006-2013. All rights reserved.
  ***************************************************************************************** */
 
-/* DSA */#include "simu.h"
+/* dsa */#include "simu.h"
 
 int bestWindow ( Queue<Customer> windows[], int nWin ) { //为新到顾客确定最佳队列
    int minSize = windows[0].size(), optiWin = 0; //最优队列（窗口）
