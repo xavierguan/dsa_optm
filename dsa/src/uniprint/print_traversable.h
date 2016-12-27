@@ -17,4 +17,3 @@ void UniPrint::p ( T& s ) { //引用
    s.traverse ( print ); //通过print()遍历输出所有元素
    printf ( "\n" );
 }
-

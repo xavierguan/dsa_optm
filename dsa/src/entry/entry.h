@@ -17,4 +17,3 @@ template <typename K, typename V> struct Entry { //词条模板类
    bool operator== ( Entry<K, V> const& e ) { return key == e.key; } //判等器：等于
    bool operator!= ( Entry<K, V> const& e ) { return key != e.key; } //判等器：不等于
 }; //得益于比较器和判等器，从此往后，不必严格区分词条及其对应的关键码
-

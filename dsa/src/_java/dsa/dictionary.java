@@ -34,4 +34,3 @@ public interface Dictionary {
    //返回词典中所有条目的一个迭代器
    public Iterator entries();
 }
-

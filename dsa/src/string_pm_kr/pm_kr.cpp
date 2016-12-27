@@ -25,4 +25,3 @@ int match ( char* P, char* T ) { //串匹配算法（Karp-Rabin）
       else updateHash ( hashT, T, m, k, Dm ); //否则，更新子串散列码，继续查找
    }
 }
-

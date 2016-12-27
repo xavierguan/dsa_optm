@@ -84,4 +84,3 @@ public class PQueue_UnsortedList implements PQueue {
       return (Entry) L.remove(minPos);
    }
 }
-

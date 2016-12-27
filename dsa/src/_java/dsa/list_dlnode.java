@@ -161,4 +161,3 @@ public class List_DLNode implements List {
    { return new IteratorElement(this); }
 }
 
-

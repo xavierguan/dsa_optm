@@ -28,4 +28,3 @@ void BTree<T>::solveOverflow ( BTNodePosi(T) v ) {
    p->child.insert ( r + 1, u );  u->parent = p; //新节点u与父节点p互联
    solveOverflow ( p ); //上升一层，如有必要则继续分裂——至多递归O(logn)层
 }
-

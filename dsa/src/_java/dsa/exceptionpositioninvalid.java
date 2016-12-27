@@ -18,4 +18,3 @@ public class ExceptionPositionInvalid extends RuntimeException {
    }
 }
 
-

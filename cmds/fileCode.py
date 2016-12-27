@@ -2,9 +2,9 @@
 # 1 ------------------------ 处理代码文件 ------------------------
 
 def fix(path):
-    # gbk2utf(path)
-    # fixError(path)
-    # fixInclude(path)
+    gbk2utf(path)
+    fixError(path)
+    fixInclude(path)
     pass
 
 
@@ -23,7 +23,7 @@ def fixError(path):
 
     content = content.replace('/*', '/* ')
     content = content.replace('*/', ' */')
-    # content = content + '\n'
+    content = content + '\n'
 
     newFile.write(content)
     newFile.close()

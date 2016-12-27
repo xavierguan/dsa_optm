@@ -20,4 +20,3 @@ template <typename K, typename V> int Hashtable<K, V>::probe4Free ( const K& k )
    return r; //为保证空桶总能找到，装填因子及散列表长需要合理设置
 }
 
-

@@ -14,4 +14,3 @@ __int64 powerBF ( __int64 a, int n ) { //a^n算法（蛮力版）：n >= 0
    }
    return pow; //O(1)
 } //powerBF()
-

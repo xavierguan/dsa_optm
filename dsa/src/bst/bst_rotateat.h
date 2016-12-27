@@ -32,4 +32,3 @@ template <typename T> BinNodePosi(T) BST<T>::rotateAt ( BinNodePosi(T) v ) { //v
          return connect34 ( g, v, p, g->lc, v->lc, v->rc, p->rc );
       }
 }
-

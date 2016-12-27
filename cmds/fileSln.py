@@ -8,11 +8,12 @@ def fix(path):
         return ''
 
     proPath = path.replace('.sln', '.pro')
-    genProFile(proPath)
+    # genProFile(proPath)
 
     return proPath
 
 
+# 生成主 pro 文件
 def genProFile(path):
     rootProFile = open(path, 'w')
     rootProFile.write('TEMPLATE = subdirs\n')

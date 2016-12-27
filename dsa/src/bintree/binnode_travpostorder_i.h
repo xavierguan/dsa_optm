@@ -29,4 +29,3 @@ void travPost_I ( BinNodePosi(T) x, VST& visit ) { //二叉树的后序遍历（
       x = S.pop(); visit ( x->data ); //弹出栈顶（即前一节点之后继），并访问之
    }
 }
-

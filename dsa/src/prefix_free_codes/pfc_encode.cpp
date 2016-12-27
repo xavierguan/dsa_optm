@@ -22,4 +22,3 @@ int encode ( PFCTable* table, Bitmap& codeString, char* s ) { //PFC编码算法
    return n; //二进制编码串记录于codeString中，返回编码串总长
 }
 
-

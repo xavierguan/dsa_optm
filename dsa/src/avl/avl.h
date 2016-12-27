@@ -17,4 +17,3 @@ public:
 };
 
 #include "avl_implementation.h"
-

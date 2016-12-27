@@ -27,4 +27,3 @@ void travPre_I2 ( BinNodePosi(T) x, VST& visit ) { //二叉树先序遍历算法
       x = S.pop(); //弹出下一批的起点
    }
 }
-

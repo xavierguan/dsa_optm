@@ -61,4 +61,3 @@ public:
 };
 
 #include "graph_implementation.h"
-

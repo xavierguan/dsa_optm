@@ -30,4 +30,3 @@ int match ( char* P, char* T ) { //串匹配算法（Brute-force-1）
    return i - j; //如何通过返回值，判断匹配结果？
 }
 
-

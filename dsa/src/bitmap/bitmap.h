@@ -48,4 +48,3 @@ public:
    /* DSA */   {  expand ( n ); for ( int i = 0; i < n; i++ ) printf ( test ( i ) ? "1" : "0" );  }
 };
 
-

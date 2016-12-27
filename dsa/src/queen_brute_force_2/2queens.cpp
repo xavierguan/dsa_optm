@@ -18,4 +18,3 @@ void place2Queens() { //2皇后剪枝算法
             }
 }
 
-

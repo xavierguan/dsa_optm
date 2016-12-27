@@ -21,4 +21,3 @@ int encode ( HuffTable* table, Bitmap* codeString, char* s ) { //按照编码表
    printf ( "\n" ); return n;
 } //二进制编码串记录于位图codeString中
 
-

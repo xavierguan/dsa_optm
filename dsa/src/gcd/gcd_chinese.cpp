@@ -19,4 +19,3 @@ __int64 gcdCN ( __int64 a, __int64 b ) { //assert: 0 < min(a, b)
       if ( 0 == b ) return a << r; //简化至平凡情况：gcd(a, 0) = a
    }
 }
-

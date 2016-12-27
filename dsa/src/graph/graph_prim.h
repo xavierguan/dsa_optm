@@ -22,4 +22,3 @@ void Graph<Tv, Te>::prim ( int s ) { //assert: 0 <= s < n
             { shortest = priority ( j ); s = j; }
    }
 }
-

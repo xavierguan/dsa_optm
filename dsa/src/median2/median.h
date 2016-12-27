@@ -60,4 +60,3 @@ T median ( Vector<T>& S1, int lo1, int n1, Vector<T>& S2, int lo2, int n2 ) { //
    else //S1保留，S2左右同时缩短
       return median ( S1, lo1, n1, S2, mi2a, n2 - ( n1 - 1 ) / 2 * 2 );
 }
-

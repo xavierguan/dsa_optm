@@ -31,4 +31,3 @@ void UniPrint::p ( Hashtable<K, V>& ht ) { //引用
    printf ( "\n" );
 }
 
-

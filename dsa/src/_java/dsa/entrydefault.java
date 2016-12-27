@@ -35,4 +35,3 @@ public class EntryDefault implements Entry {
    public Object setValue(Object v)
    { Object oldV = value;  value = v;  return oldV; }
 }
-

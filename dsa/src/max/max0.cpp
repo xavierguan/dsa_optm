@@ -13,4 +13,3 @@ int maxI ( int A[], int n ) { //求数组最大值算法（迭代版）
    return m; //返回最大值，O(1)
 } //O(1) + O(n) * O(1) + O(1) = O(n + 2) = O(n)
 
-

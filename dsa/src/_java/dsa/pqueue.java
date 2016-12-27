@@ -28,4 +28,3 @@ public interface PQueue {
    //若Q非空，则从其中摘除关键码最小的条目，并返回该条目；否则，报错
    public Entry delMin() throws ExceptionPQueueEmpty;
 }
-

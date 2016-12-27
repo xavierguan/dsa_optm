@@ -26,4 +26,3 @@ typedef Skiplist<char, char*> PFCTable; //PFC编码表，词条格式为：(key 
 
 #define  N_CHAR  (0x80 - 0x20) //只考虑可打印字符
 
-

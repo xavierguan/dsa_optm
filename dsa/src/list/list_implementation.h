@@ -16,38 +16,37 @@
 #include "../_share/release.h"
 #include "../_share/util.h"
 
-//#include "listnode.h"
+#include "listnode.h"
 
-//#include "list_bracket.cpp"
+#include "list_bracket.h"
 
-//#include "list_initialize.cpp"
-//#include "list_copynodes.cpp"
-//#include "list_constructor_by_copying.cpp"
-//#include "list_destructor.cpp"
+#include "list_initialize.h"
+#include "list_copynodes.h"
+#include "list_constructor_by_copying.h"
+#include "list_destructor.h"
 
-//#include "list_disordered.cpp"
+#include "list_disordered.h"
 
-//#include "list_find.cpp"
-//#include "list_search.cpp"
+#include "list_find.h"
+#include "list_search.h"
 
-//#include "list_insert.cpp"
-//#include "list_remove.cpp"
-//#include "list_clear.cpp"
+#include "list_insert.h"
+#include "list_remove.h"
+#include "list_clear.h"
 
-//#include "list_traverse.cpp"
+#include "list_traverse.h"
 
-//#include "list_sort.cpp"
-//#include "list_insertionsort.cpp"
-//#include "list_selectmax.cpp"
-//#include "list_selectionsort.cpp"
-//#include "list_merge.cpp"
-//#include "list_mergesort.cpp"
+#include "list_sort.h"
+#include "list_insertionsort.h"
+#include "list_selectmax.h"
+#include "list_selectionsort.h"
+#include "list_merge.h"
+#include "list_mergesort.h"
 
-//#include "list_deduplicate.cpp"
-//#include "list_uniquify.cpp"
+#include "list_deduplicate.h"
+#include "list_uniquify.h"
 
-//#include "list_reverse1.cpp"
+#include "list_reverse1.h"
 //#include "list_reverse2.h"
 //#include "list_reverse3.h"
-
 

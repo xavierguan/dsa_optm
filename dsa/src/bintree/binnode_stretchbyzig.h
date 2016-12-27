@@ -23,4 +23,3 @@ template <typename T> void stretchByZig ( BinNodePosi(T) & x, int h ) {
    /* DSA */printf ( "\nh = %d, c = %d\n\n", h, c );
 }
 
-

@@ -14,4 +14,3 @@ template <typename T> struct PQ { //优先级队列PQ模板类
    virtual T delMax() = 0; //删除优先级最高的词条
 };
 
-

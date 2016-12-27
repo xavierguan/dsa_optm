@@ -26,4 +26,3 @@ int main ( int argc, char* argv[] ) {
    else { cout << "Unrecognizable running mode" << endl; return -2; }
    place5Queens_BruteForce();
 }
-

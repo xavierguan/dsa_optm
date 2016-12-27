@@ -31,4 +31,3 @@ void UniPrint::p ( Quadlist<T>& q ) { //引用
    printf ( "\n" );
 }
 
-

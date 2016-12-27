@@ -22,4 +22,3 @@ void bubblesort ( int A[], int n ) { //起泡排序算法（版本0）：0 <= n
    }
    /* DSA */printf ( "#comparison = %d, #swap = %d\n", cmp, swp );
 } //蛮力算法，不能及时提前退出，总是必须做n-1趟扫描交换
-

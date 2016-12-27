@@ -25,4 +25,3 @@ template <typename K, typename V> void Hashtable<K, V>::rehash() {
    release ( old_ht ); //释放原桶数组——由于其中原先存放的词条均已转移，故只需释放桶数组本身
 }
 
-

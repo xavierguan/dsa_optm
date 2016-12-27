@@ -21,4 +21,3 @@ void travIn_I4 ( BinNodePosi(T) x, VST& visit ) { //二叉树中序遍历（迭�
          x = x->rc; //（直至有右分支处）转向非空的右子树
       }
 }
-

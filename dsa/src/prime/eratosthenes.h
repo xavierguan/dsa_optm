@@ -9,4 +9,3 @@
 #pragma once
 
 void Eratosthenes ( int n, char* file ); //筛法求素数
-

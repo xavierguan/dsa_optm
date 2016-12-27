@@ -24,4 +24,3 @@ int main ( int argc, char* argv[] ) { //PFC编码、解码算法统一测试入�
    }
    release ( table ); release ( tree ); return 0; //释放编码表、编码树
 }
-

@@ -40,4 +40,3 @@ public interface Graph {
    //在边集E中插入新边e，并返回其位置
    public Position insert(Edge e);
 }
-

@@ -12,4 +12,3 @@
 #include "../uniprint/print.h"
 
 void convert ( Stack<char>&, __int64, int );
-

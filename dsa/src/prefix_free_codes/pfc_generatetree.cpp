@@ -23,4 +23,3 @@ PFCTree* generateTree ( PFCForest* forest ) { //构造PFC树
    }
    return ( *forest ) [0]; //至此，森林中尚存的最后一棵树，即全局PFC编码树
 }
-

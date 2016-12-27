@@ -32,4 +32,3 @@ void displayProgress ( char* expr, char* pCh, Stack<float>& opndStk, Stack<char>
    printf ( "RPN:\n %s\n\n", rpn ); //输出RPN
    getchar();
 }
-

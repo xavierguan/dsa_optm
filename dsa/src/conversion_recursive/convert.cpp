@@ -16,4 +16,3 @@ void convert ( Stack<char>& S, __int64 n, int base ) { //十进制正整数n到b
       convert ( S, n / base, base ); //通过递归得到所有更高位
    }
 } //新进制下由高到低的各数位，自顶而下保存于栈S中
-

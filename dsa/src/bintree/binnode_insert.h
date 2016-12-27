@@ -14,4 +14,3 @@ template <typename T> BinNodePosi(T) BinNode<T>::insertAsLC ( T const& e )
 template <typename T> BinNodePosi(T) BinNode<T>::insertAsRC ( T const& e )
 { return rc = new BinNode ( e, this ); } //将e作为当前节点的右孩子插入二叉树
 
-

@@ -16,4 +16,3 @@ void decode ( PFCTree* tree, Bitmap& code, int n ) { //PFC解码算法
    }
    /* DSA */if ( x != tree->root() ) printf ( " code seems to be incomplete ..." ); printf ( "\n" );
 }
-

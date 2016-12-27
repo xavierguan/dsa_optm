@@ -65,4 +65,3 @@ public:
 
 #include "vector_implementation.h"
 
-

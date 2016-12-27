@@ -43,4 +43,3 @@ bool Graph<Tv, Te>::TSort ( int v, int& clock, Stack<Tv>* S ) { //assert: 0 <= v
    status ( v ) = VISITED; S->push ( vertex ( v ) ); //顶点被标记为VISITED时，随即入栈
    return true; //v及其后代可以拓扑排序
 }
-

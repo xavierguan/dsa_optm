@@ -25,4 +25,3 @@ public interface SortedDictionary extends Dictionary {
    //返回由关键码不大于key的条目依非升序组成的迭代器
    public Iterator predecessors(Object key);
 }
-

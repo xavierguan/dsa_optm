@@ -20,4 +20,3 @@ template <typename T> int Quadlist<T>::clear() { //清空Quadlist
    while ( 0 < _size ) remove ( header->succ ); //逐个删除所有节点
    return oldSize;
 }
-

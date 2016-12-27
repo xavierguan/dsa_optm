@@ -25,4 +25,3 @@ void randLaby() { //生成随机的迷宫
    goalCell  = &laby[rand() % ( labySize-2 ) + 1][rand() % ( labySize-2 ) + 1];
    startCell->status = goalCell->status = AVAILABLE; //起始格点必须可用
 }
-

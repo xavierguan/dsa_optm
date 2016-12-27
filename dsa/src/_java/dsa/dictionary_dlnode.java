@@ -83,4 +83,3 @@ public class Dictionary_DLNode implements Dictionary {
    public Iterator entries()
    {  return new IteratorElement(L); }//直接利用List接口的方法生成元素迭代器
 }
-

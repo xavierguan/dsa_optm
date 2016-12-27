@@ -18,4 +18,3 @@ public class ExceptionListEmpty extends RuntimeException {
    }
 }
 
-

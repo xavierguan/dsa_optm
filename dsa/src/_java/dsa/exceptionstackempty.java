@@ -18,4 +18,3 @@ public class ExceptionStackEmpty extends RuntimeException {
    }
 }
 
-

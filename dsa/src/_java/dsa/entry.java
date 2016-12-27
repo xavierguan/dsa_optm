@@ -23,4 +23,3 @@ public interface Entry {
    //修改条目的数据对象，返回此前存放的数据对象
    public Object setValue(Object v);
 }
-

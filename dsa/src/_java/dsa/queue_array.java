@@ -68,4 +68,3 @@ public class Queue_Array implements Queue {
       System.out.println();
    }
 }
-

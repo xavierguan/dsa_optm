@@ -21,4 +21,3 @@ BinNodePosi(T) BinTree<T>::attachAsRC ( BinNodePosi(T) x, BinTree<T>* &S ) { //x
    _size += S->_size; updateHeightAbove ( x ); //更新全树规模与x所有祖先的高度
    S->_root = NULL; S->_size = 0; release ( S ); S = NULL; return x; //释放原树，返回接入位置
 }
-

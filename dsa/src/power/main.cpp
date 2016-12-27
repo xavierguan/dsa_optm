@@ -28,4 +28,3 @@ int main ( int argc, char* argv[] ) {
    printf ( "\n%I64d ^ %d  =  %I64d  =  %I64d\n\n", a, r, powerBF ( a, r ), power ( a, r ) ); //通用算法迭代版
    return 0;
 }
-

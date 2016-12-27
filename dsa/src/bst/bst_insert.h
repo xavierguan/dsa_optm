@@ -16,4 +16,3 @@ template <typename T> BinNodePosi(T) BST<T>::insert ( const T& e ) { //将关键
    return x; //新插入的节点，必为叶子
 } //无论e是否存在于原树中，返回时总有x->data == e
 
-

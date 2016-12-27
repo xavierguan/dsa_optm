@@ -16,4 +16,3 @@ int primeNLT ( int c, int n, char* file ) { //根据file文件中的记录，在
    return c; //若没有这样的素数，返回n（实用中不能如此简化处理）
 }
 
-

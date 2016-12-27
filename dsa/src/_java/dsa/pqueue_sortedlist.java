@@ -77,4 +77,3 @@ public class PQueue_SortedList implements PQueue {
       return (Entry) L.remove(L.last());
    }
 }
-

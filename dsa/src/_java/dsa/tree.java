@@ -36,4 +36,3 @@ public interface Tree {
    //返回当前节点的深度
    public int getDepth();
 }
-

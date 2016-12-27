@@ -11,4 +11,3 @@
 #include "stack@vector.h" //由向量派生的栈
 //#include "stack@list.h" //由列表派生的栈
 
-

@@ -14,4 +14,3 @@ template <typename K, typename V> struct Dictionary { //词典Dictionary模板�
    virtual V* get ( K k ) = 0; //读取词条
    virtual bool remove ( K k ) = 0; //删除词条
 };
-

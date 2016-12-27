@@ -80,4 +80,3 @@ public class Map_DLNode implements Map {
    public Iterator entries()
    {  return new IteratorElement(L); }//直接利用List接口的方法生成元素迭代器
 }
-

@@ -22,4 +22,3 @@ T trivialMedian ( Vector<T>& S1, int lo1, int n1, Vector<T>& S2, int lo2, int n2
    while ( lo2 < hi2 ) S.insert ( S1[lo2 ++] ); /* DSA */print ( S );
    return S[ ( n1 + n2 ) / 2]; //直接返回归并向量的中位数
 }
-

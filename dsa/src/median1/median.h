@@ -22,4 +22,3 @@ T median ( Vector<T>& S1, int lo1, Vector<T>& S2, int lo2, int n ) { //中位数
    else
       return S1[mi1];
 }
-

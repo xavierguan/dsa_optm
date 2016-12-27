@@ -21,4 +21,3 @@ public interface Sequence extends Vector, List {
    public int pos2Rank(Position p)
    throws ExceptionPositionInvalid;
 }
-

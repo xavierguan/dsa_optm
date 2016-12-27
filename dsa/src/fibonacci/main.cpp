@@ -41,4 +41,3 @@ int main ( int argc, char* argv[] ) { //测试FIB
    return 0;
 }
 
-

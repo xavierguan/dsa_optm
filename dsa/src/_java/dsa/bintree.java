@@ -37,4 +37,3 @@ public interface BinTree {
    //层次遍历
    public Iterator elementsLevelorder();
 }
-

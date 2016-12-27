@@ -40,4 +40,3 @@ int main ( int argc, char* argv[] ) {
    srand ( ( unsigned int ) time ( NULL ) ); //设置随机种子
    return testBitmap ( atoi ( argv[1] ) ); //启动测试
 }
-

@@ -15,4 +15,3 @@ template <typename T> bool majEleCheck ( Vector<T> A, T maj ) { //验证候选�
    /* DSA */printf ( "%d found with %d/%d occurrence(s)\n", maj, occurrence, A.size() );
    return 2 * occurrence > A.size(); //根据最终的计数值，即可判断是否的确当选
 }
-

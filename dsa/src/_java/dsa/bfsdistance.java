@@ -33,4 +33,3 @@ public class BFSDistance extends BFS {
    }
 }
 
-

@@ -30,4 +30,3 @@ public class BestFSDijkstra extends BestFS {
    }
 }
 
-

@@ -28,4 +28,3 @@ void append ( char*&, float ); //重载
 void append ( char*&, char ); //重载
 float evaluate ( char* expr, char*& rpn );
 
-

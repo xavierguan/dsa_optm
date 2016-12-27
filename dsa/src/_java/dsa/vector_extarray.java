@@ -68,4 +68,3 @@ public class Vector_ExtArray implements Vector {
       return bak;
    }
 }
-

@@ -15,4 +15,3 @@
  * The Art of Computer Programming, Vol.2, Algorithm S
  ***************************************************************************************** */
 Vector<int> randomSortedVector ( int n, int min, int max );
-

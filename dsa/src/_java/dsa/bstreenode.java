@@ -42,4 +42,3 @@ public class BSTreeNode extends BinTreeNode implements BinTreePosition, Entry {
    public Object setValue(Object v)
    { return ((Entry)getElem()).setValue(v); }
 }
-

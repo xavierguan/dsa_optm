@@ -28,4 +28,3 @@ HuffTree* generateTree ( HuffForest* forest ) { //Huffman编码算法
    } //assert: 循环结束时，森林中唯一（列表首节点中）的那棵树即Huffman编码树
    return forest->first()->data;
 }
-

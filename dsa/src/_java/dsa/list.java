@@ -67,4 +67,3 @@ public interface List {
    //元素迭代器
    public Iterator elements();
 }
-

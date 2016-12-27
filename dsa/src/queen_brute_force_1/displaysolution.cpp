@@ -22,4 +22,3 @@ void displaySolution ( int* solu, int n ) { //输出n*n的可行布局
    } else
       printf ( "\n" );
 }
-

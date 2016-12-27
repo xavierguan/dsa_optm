@@ -22,4 +22,3 @@ template <typename T> void quickSelect ( Vector<T> & A, Rank k ) { //基于快�
    } //A[k] is now a pivot
 }
 
-

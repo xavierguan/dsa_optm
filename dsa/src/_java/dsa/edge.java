@@ -38,4 +38,3 @@ public interface Edge {
    public int setType(int t);
 }
 
-

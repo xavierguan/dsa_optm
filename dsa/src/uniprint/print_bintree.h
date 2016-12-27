@@ -102,4 +102,3 @@ static void printBinTree ( BinNodePosi(T) bt, int depth, int type, Bitmap* bType
    printBinTree ( bt->lc, depth + 1, L_CHILD, bType ); //左子树（在下）
 }
 
-

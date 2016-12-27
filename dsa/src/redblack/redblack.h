@@ -21,4 +21,3 @@ public:
 };
 
 #include "redblack_implementation.h"
-

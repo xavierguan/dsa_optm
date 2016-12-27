@@ -19,4 +19,3 @@ void UniPrint::p ( Skiplist<K, V>& s ) { //引用
    printf ( "\n" );
 }
 
-

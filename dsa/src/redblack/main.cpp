@@ -67,4 +67,3 @@ int main ( int argc, char* argv[] ) {
    testRedBlack<int> ( atoi ( argv[1] ) ); //元素类型可以在这里任意选择
    return 0;
 }
-

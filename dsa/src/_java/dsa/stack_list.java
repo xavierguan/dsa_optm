@@ -52,4 +52,3 @@ public class Stack_List implements Stack {
       return temp;
    }
 }
-

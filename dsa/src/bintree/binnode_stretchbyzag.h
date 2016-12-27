@@ -24,4 +24,3 @@ template <typename T> void stretchByZag ( BinNodePosi(T) & x ) {
    /* DSA */printf ( "\nh = %d, c = %d\n\n", h, c );
 }
 
-

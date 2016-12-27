@@ -50,4 +50,3 @@ public abstract class GraphTraverse {
    protected abstract Object traverse(Vertex v, Object info);//从顶点v出发做遍历
 }
 
-

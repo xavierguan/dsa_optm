@@ -15,4 +15,3 @@ QuadlistNode<T>::insertAsSuccAbove ( T const& e, QlistNodePosi(T) b = NULL ) {
    if ( b ) b->above = x; //设置垂直逆向链接
    return x; //返回新节点的位置
 }
-

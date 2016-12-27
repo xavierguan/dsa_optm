@@ -6,8 +6,8 @@ import xml.dom.minidom
 
 
 def fix(path, rootProPath):
-    # zh2en(path)
-    genSubPro(path, rootProPath)
+    zh2en(path)
+    # genSubPro(path, rootProPath)
     pass
 
 
@@ -16,9 +16,10 @@ def zh2en(path):
     content = open(path, 'r', encoding='utf-8').read()
     newFile = open(path, 'w', encoding='utf-8')
 
+    content = content.replace('资源文件', 'Resource Files')
     content = content.replace('头文件', 'Header Files')
     content = content.replace('源文件', 'Source Files')
-    content = content.replace('资源文件', 'Resource Files')
+
 
     newFile.write(content)
     newFile.close()

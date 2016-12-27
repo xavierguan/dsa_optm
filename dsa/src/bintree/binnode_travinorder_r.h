@@ -16,4 +16,3 @@ void travIn_R ( BinNodePosi(T) x, VST& visit ) { //二叉树中序遍历算法�
    travIn_R ( x->rc, visit );
 }
 
-

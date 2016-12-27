@@ -30,8 +30,6 @@
 #define uncle(x) /* 叔叔 */ \
    ( IsLChild( * ( (x)->parent ) ) ? (x)->parent->parent->rc : (x)->parent->parent->lc )
 
-#define FromParentTo(x) /* 来自父亲的引用  */ \
+#define FromParentTo(x) /* 来自父亲的引用 */ \
    ( IsRoot(x) ? _root : ( IsLChild(x) ? (x).parent->lc : (x).parent->rc ) )
-
-
 

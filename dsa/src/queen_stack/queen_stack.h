@@ -24,4 +24,3 @@ extern int nCheck; //尝试的总次数
 void placeQueens ( int );
 void displayRow ( Queen& q, int );
 void displayProgress ( Stack<Queen>& S, int );
-

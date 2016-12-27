@@ -34,4 +34,3 @@ void place2Queens();
 void place3Queens();
 void place4Queens();
 void place5Queens();
-

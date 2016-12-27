@@ -16,4 +16,3 @@ int shift0 ( int* A, int n, int k ) { //蛮力地将数组循环左移k位，O(n
    }
    return mov;
 }
-

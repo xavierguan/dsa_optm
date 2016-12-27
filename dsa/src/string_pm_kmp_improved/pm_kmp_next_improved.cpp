@@ -22,4 +22,3 @@ int* buildNext ( char* P ) { //构造模式串P的next表（改进版本）
    return N;
 }
 
-

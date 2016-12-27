@@ -17,4 +17,3 @@ template <typename T> BTNodePosi(T) BTree<T>::search ( const T& e ) { //在B-树
    } //这里在向量内是二分查找，但对通常的_order可直接顺序查找
    return NULL; //失败：最终抵达外部节点
 }
-

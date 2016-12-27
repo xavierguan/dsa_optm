@@ -24,4 +24,3 @@ void BinNode<T>::travIn ( VST& visit ) { //二叉树中序遍历算法统一入�
       default: travIn_R ( this, visit ); break; //递归版
    }
 }
-

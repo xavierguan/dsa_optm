@@ -46,4 +46,3 @@ void Graph<Tv, Te>::BCC ( int v, int& clock, Stack<int>& S ) { //assert: 0 <= v 
    status ( v ) = VISITED; //对v的访问结束
 }
 #undef hca
-

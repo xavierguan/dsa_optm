@@ -24,4 +24,3 @@ extern HuffTree* generateTree ( HuffForest* ); //构造编码树
 extern HuffTable* generateTable ( HuffTree* ); //由编码树转换为编码表
 extern int encode ( HuffTable*, Bitmap*, char* ); //明文的编码，返回编码长度
 extern void decode ( HuffTree*, Bitmap*, int ); //二进制串的解码
-

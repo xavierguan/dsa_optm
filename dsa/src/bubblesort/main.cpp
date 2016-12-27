@@ -55,4 +55,3 @@ void main ( int argc, char* argv[] ) {
    printf ( "==>  " ); print ( A, n );
    free ( A ); //release the array
 }
-

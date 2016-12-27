@@ -26,4 +26,3 @@ void bubblesort1A ( int A[], int n ) { //起泡排序算法（版本1A）：0 <=
    }
    /* DSA */printf ( "#comparison = %d, #swap = %d\n", cmp, swp );
 } //借助布尔型标志位sorted，可及时提前退出，而不致总是蛮力地做n - 1趟扫描交换
-

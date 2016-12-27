@@ -17,4 +17,3 @@ int*     BuildBC ( String ); //构造Bad Charactor Shift表
 int*     suffixes ( String );
 int*     BuildGS ( String ); //构造Good Suffix Shift表
 
-

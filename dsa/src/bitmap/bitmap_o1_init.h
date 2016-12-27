@@ -41,4 +41,3 @@ public:
    {  return valid ( F[k] ) && ( k == T[ F[k] ] );  }
 };
 
-

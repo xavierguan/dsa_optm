@@ -21,4 +21,3 @@ bool paren ( const char exp[], int lo, int hi ) { //表达式括号匹配检查�
    }
    return S.empty(); //整个表达式扫描过后，栈中若仍残留（左）括号，则不匹配；否则（栈空）匹配
 }
-

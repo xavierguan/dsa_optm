@@ -15,4 +15,3 @@ using namespace std;
 #include "../uniprint/print.h"
 
 #include "../graphmatrix/graphmatrix.h"
-

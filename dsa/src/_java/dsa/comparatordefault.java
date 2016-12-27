@@ -18,4 +18,3 @@ public class ComparatorDefault implements Comparator {
       return ((Comparable) a).compareTo(b);
    }
 }
-

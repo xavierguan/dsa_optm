@@ -20,4 +20,3 @@ void BinNode<T>::travPre ( VST& visit ) { //二叉树先序遍历算法统一入
       default: travPre_R ( this, visit ); break; //递归版
    }
 }
-

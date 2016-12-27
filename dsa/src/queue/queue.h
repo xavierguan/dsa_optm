@@ -17,4 +17,3 @@ public: //size()、empty()以及其它开放接口均可直接沿用
 };
 
 #include "queue_implementation.h"
-

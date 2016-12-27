@@ -19,4 +19,3 @@ static int dice ( int lo, int hi ) { return lo + rand() % ( hi - lo ); } //取[l
 static float dice ( float range ) { return rand() % ( 1000 * ( int ) range ) / ( float ) 1000.; }
 static double dice ( double range ) { return rand() % ( 1000 * ( int ) range ) / ( double ) 1000.; }
 static char dice ( char range ) { return ( char ) ( 32 + rand() % 96 ); }
-

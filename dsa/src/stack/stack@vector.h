@@ -16,4 +16,3 @@ public: //size()、empty()以及其它开放接口，均可直接沿用
    T& top() { return ( *this ) [size() - 1]; } //取顶：直接返回向量的末元素
 };
 
-

@@ -70,4 +70,3 @@ public class Graph_List implements Graph {
    public Position insert(Edge e) { return E.insertLast(e); }
 }
 
-

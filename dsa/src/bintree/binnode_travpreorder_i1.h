@@ -17,4 +17,3 @@ void travPre_I1 ( BinNodePosi(T) x, VST& visit ) { //二叉树先序遍历算法
       if ( HasRChild ( *x ) ) S.push ( x->rc ); if ( HasLChild ( *x ) ) S.push ( x->lc );
    }
 }
-

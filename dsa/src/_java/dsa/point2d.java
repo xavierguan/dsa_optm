@@ -24,4 +24,3 @@ public class Point2D {
    public int getY()
    {  return y; }
 }
-

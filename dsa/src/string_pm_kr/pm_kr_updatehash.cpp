@@ -15,4 +15,3 @@ void updateHash ( HashCode& hashT, char* T, size_t m, size_t k, HashCode Dm ) {
    if ( 0 > hashT ) hashT += M; //确保散列码落在合法区间内
 }
 
-

@@ -19,4 +19,3 @@ template <typename T> void checkOrder ( List<T> & L ) { //判断列表是否整�
       printf ( "Sorted\n" );
    printf ( "DISORDERED = %d\n", L.disordered() );
 }
-

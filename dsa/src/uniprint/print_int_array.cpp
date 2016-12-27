@@ -20,4 +20,3 @@ void print ( int A[], int n, int lo, int hi ) { //输出整数数组区间A[lo, 
 
 void print ( int A[], int n ) { print ( A, n, 0, n ); }
 
-

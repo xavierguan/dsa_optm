@@ -10,4 +10,3 @@
 
 #include "../pq_leftheap/pq_leftheap.h" //用pq_leftheap实现
 typedef PQ_LeftHeap<HuffTree*> HuffForest; //Huffman森林
-

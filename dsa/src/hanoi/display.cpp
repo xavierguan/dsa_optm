@@ -31,4 +31,3 @@ void displayHanoi() {
    for ( int j = 0; j < 3 * ( 2 * nDisk + 1 ); j++ )   printf ( "=" );   printf ( "\n" ); //显示地面
    getchar();
 }
-

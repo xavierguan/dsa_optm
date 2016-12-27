@@ -71,4 +71,3 @@ public class Sequence_DLNode extends List_DLNode implements Sequence {
       return remove(rank2Pos(r));
    }
 }
-

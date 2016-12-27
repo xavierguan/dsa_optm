@@ -26,4 +26,3 @@ void displayProgress ( Stack<Queen>& S, int nQueen ) { //在棋盘上显示搜�
       cout  << nSolu << " solution(s) found after " << nCheck << " check(s)\a";
    getchar();
 }
-

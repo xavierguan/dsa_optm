@@ -19,4 +19,3 @@ void place3Queens() { //3皇后剪枝算法
                      nSolu++; displaySolution ( solu, 3 );
                   }
 }
-

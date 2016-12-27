@@ -23,4 +23,3 @@ public interface Deque {
    public Object removeLast() throws ExceptionQueueEmpty;//删除末元素
    public void Traversal();//遍历
 }
-

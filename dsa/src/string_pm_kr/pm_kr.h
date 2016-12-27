@@ -21,4 +21,3 @@ bool check1by1 ( char* P, char* T, size_t i );
 HashCode prepareDm ( size_t m );
 void updateHash ( HashCode& hashT, char* T, size_t m, size_t k, HashCode Dm );
 
-

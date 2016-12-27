@@ -24,4 +24,3 @@ template <typename T> struct QuadlistNode { //QuadlistNode模板类
 };
 
 #include "quadlistnode_implementation.h"
-

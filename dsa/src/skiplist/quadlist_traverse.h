@@ -19,4 +19,3 @@ void Quadlist<T>::traverse ( VST& visit ) { //利用函数对象机制，可全�
    QlistNodePosi(T) p = header;
    while ( ( p = p->succ ) != trailer ) visit ( p->data );
 }
-

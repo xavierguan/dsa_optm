@@ -19,4 +19,3 @@ struct Queen { //皇后类
    }
    bool operator!= ( Queen const& q ) const { return ! ( *this == q ); } //重载不等操作符 /* DSA */可否写成：return *this != q？
 };
-

@@ -23,4 +23,3 @@ struct Cell { //迷宫格点
 
 #define LABY_MAX 24 //最大迷宫尺寸
 Cell laby[LABY_MAX][LABY_MAX]; //迷宫
-

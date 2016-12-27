@@ -16,4 +16,3 @@ struct HuffChar { //Huffman（超）字符
    bool operator< ( HuffChar const& hc ) { return weight > hc.weight; } //此处故意大小颠倒
    bool operator== ( HuffChar const& hc ) { return weight == hc.weight; }
 };
-

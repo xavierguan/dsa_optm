@@ -73,4 +73,3 @@ public class Vertex_List implements Vertex {
    public Vertex setBFSParent(Vertex s) { Vertex ss = bfsParent; bfsParent = s; return ss; }
 }
 
-

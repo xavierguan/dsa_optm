@@ -26,4 +26,3 @@ void place5Queens_BruteForce() { //5皇后蛮力算法
                }
    printf ( "%d Queens, %d Solution(s), %d Candidate(s), %dCheck(s)\n\a\a", 5, nSolu, nCandidate, nCheck ); //输出解的总数
 }
-

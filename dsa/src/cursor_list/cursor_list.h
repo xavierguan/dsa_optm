@@ -67,4 +67,3 @@ public:
 };
 
 #include "cursor_list_implementation.h"
-

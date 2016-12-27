@@ -30,4 +30,3 @@ void displayProgress ( const char exp[], int i, Stack<char> S ) {
    print ( S ); getchar();
 }
 
-

@@ -17,4 +17,3 @@ int shift ( int* A, int n, int s, int k ) { //从A[s]出发，以k为间隔循�
    A[i] = bak; //将起始元素转入对应位置
    return mov + 1;
 }
-

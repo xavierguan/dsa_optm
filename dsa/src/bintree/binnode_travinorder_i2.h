@@ -22,4 +22,3 @@ void travIn_I2 ( BinNodePosi(T) x, VST& visit ) { //二叉树中序遍历算法�
       } else
          break; //遍历完成
 }
-

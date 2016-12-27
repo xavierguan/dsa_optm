@@ -15,4 +15,3 @@ void reverse ( int* A, int lo, int hi ) { //数组倒置（多递归基递归版
       reverse ( A, lo + 1, hi - 1 ); //递归倒置A(lo, hi)
    } //else隐含了两种递归基
 } //O(hi - lo + 1)
-

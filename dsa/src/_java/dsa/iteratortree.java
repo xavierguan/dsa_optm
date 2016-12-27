@@ -71,4 +71,3 @@ public class IteratorTree implements Iterator {
       return currentPosition.getElem();
    }
 }
-

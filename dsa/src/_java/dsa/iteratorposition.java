@@ -42,4 +42,3 @@ public class IteratorPosition implements Iterator {
       return currentPosition;
    }
 }
-

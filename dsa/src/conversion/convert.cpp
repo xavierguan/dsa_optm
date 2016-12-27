@@ -19,4 +19,3 @@ void convert ( Stack<char>& S, __int64 n, int base ) { //十进制数n到base进
       /* DSA */print ( S );   getchar();
    }
 } //新进制下由高到低的各数位，自顶而下保存于栈S中
-

@@ -52,4 +52,3 @@ static void printBTree ( BTNodePosi(T) bt, int depth, bool isLeftmost, bool isRi
    }
 }
 
-

@@ -67,4 +67,3 @@ public:
 }; //UniPrint
 
 #include "print_implementation.h"
-

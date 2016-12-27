@@ -33,4 +33,3 @@ int main ( int argc, char* argv[] ) { //Huffman编码算法统一测试
    }
    release ( table ); release ( tree ); return 0; //释放编码表、编码树
 }
-

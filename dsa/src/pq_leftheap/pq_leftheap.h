@@ -24,4 +24,3 @@ public:
 }; //PQ_LeftHeap
 
 #include "pq_leftheap_implementation.h"
-

@@ -28,4 +28,3 @@ void Eratosthenes ( int n, char* file ) {
             B.set ( j ); //将下一个数标记为合数
    B.dump ( file ); //将所有整数的筛选标记统一存入指定文件，以便日后直接导入
 }
-

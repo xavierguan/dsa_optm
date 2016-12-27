@@ -16,4 +16,3 @@ HuffForest* initForest ( int* freq ) { //根据频率统计表，为每个字符
    }
    return forest;
 }
-

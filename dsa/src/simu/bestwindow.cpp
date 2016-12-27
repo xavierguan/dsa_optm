@@ -15,4 +15,3 @@ int bestWindow ( Queue<Customer> windows[], int nWin ) { //为新到顾客确定
          { minSize = windows[i].size(); optiWin = i; } //队列最短者
    return optiWin; //返回
 }
-

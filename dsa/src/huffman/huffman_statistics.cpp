@@ -16,4 +16,3 @@ int* statistics ( char* sample_text_file ) { //统计字符出现频率
       if ( ch >= 0x20 ) freq[ch - 0x20]++; //累计对应的出现次数
    fclose ( fp ); return freq;
 }
-

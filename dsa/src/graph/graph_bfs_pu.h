@@ -17,4 +17,3 @@ template <typename Tv, typename Te> struct BfsPU { //针对BFS算法的顶点优
          } //如此效果等同于，先被发现者优先
    }
 };
-

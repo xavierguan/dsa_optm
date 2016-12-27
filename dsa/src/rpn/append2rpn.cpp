@@ -22,4 +22,3 @@ void append ( char*& rpn, char optr ) { //将运算符接至RPN末尾
    rpn = ( char* ) realloc ( rpn, sizeof ( char ) * ( n + 3 ) ); //扩展空间
    sprintf ( rpn + n, "%c ", optr ); rpn[n + 2] = '\0'; //接入指定的运算符
 }
-

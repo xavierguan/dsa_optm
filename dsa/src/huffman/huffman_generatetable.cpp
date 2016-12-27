@@ -22,4 +22,3 @@ HuffTable* generateTable ( HuffTree* tree ) { //将各字符编码统一存入�
    HuffTable* table = new HuffTable; Bitmap* code = new Bitmap;
    generateCT ( code, 0, table, tree->root() ); release ( code ); return table;
 };
-

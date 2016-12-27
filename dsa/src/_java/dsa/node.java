@@ -41,4 +41,3 @@ public class Node implements Position {
    public void setNext(Node newNext)
    { next = newNext; }
 }
-

@@ -17,4 +17,3 @@ template <typename T> void Quadlist<T>::init() { //Quadlist初始化，创建Qua
    header->below = trailer->below = NULL; //纵向的前驱置空
    _size = 0; //记录规模
 } //如此构造的四联表，不含任何实质的节点，且暂时与其它四联表相互独立
-

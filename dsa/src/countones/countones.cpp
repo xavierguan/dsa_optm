@@ -15,4 +15,3 @@ int countOnes ( unsigned int n ) { //统计整数二进制展开中数位1的总
    return ones; //返回计数
 } //等效于glibc的内置函数int __builtin_popcount (unsigned int n)
 
-

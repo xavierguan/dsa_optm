@@ -35,4 +35,3 @@ public interface Vector {
    public Object removeAtRank(int r)
    throws ExceptionBoundaryViolation;
 }
-

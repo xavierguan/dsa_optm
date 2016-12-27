@@ -42,4 +42,3 @@ public class IteratorElement implements Iterator {
       return currentPosition.getElem();
    }
 }
-

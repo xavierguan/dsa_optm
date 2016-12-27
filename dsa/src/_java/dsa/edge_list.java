@@ -52,4 +52,3 @@ public class Edge_List implements Edge {
 
 }
 
-

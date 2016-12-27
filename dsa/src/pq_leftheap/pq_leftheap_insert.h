@@ -14,4 +14,3 @@ template <typename T> void PQ_LeftHeap<T>::insert ( T e ) { //基于合并操作
 //   _root->parent = NULL; //既然此时堆非空，还需相应设置父子链接
    _size++; //更新规模
 }
-

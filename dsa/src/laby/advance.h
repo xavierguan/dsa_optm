@@ -19,4 +19,3 @@ inline Cell* advance ( Cell* cell ) { //从当前位置转入相邻格点
    }
    return next;
 }
-

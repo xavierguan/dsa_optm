@@ -43,4 +43,3 @@ template <typename T> struct BinNode { //二叉树节点模板类
 };
 
 #include "binnode_implementation.h"
-

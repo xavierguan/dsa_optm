@@ -19,7 +19,7 @@ using namespace std;
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-#include <typeinfo>
+#include <typeinfo.h>
 #include "comparator.h"
 
 #include "checkorder_elem.h"
@@ -43,4 +43,3 @@ using namespace std;
 #else
 #define DSA(x) //不输出
 #endif
-

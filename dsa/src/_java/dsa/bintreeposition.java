@@ -85,4 +85,3 @@ public interface BinTreePosition extends Position {
    //层次遍历
    public Iterator elementsLevelorder();
 }
-

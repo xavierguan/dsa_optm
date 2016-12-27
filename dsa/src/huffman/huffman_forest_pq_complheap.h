@@ -10,4 +10,3 @@
 
 #include "../pq_complheap/pq_complheap.h" //用pq_complheap实现
 typedef PQ_ComplHeap<HuffTree*> HuffForest; //Huffman森林
-

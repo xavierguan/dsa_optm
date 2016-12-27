@@ -14,4 +14,3 @@ template <typename T> int Vector<T>::uniquify() { //有序向量重复元素剔�
       _elem[i - 1] == _elem[i] ? remove ( i ) : i++; //若雷同，则删除后者；否则，转至后一元素
    return oldSize - _size; //向量规模变化量，即被删除元素总数
 }
-

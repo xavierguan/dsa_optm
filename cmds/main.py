@@ -1,4 +1,6 @@
-import sys, os
+
+import sys
+import os
 
 import fileSln
 import fileCode
@@ -31,4 +33,4 @@ if __name__ == "__main__":
     global rootProPath
     rootPath = sys.argv[1]
     main(rootPath)
-    print('rootProPath: ' + rootProPath)
+    # print('rootProPath: ' + rootProPath)

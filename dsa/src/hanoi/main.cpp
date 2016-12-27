@@ -26,4 +26,3 @@ int main ( int argc, char* argv[] ) {
    hanoi ( nDisk, Sx, Sy, Sz );
    return 0;
 }
-

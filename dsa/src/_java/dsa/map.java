@@ -32,4 +32,3 @@ public interface Map {
    //返回映射中所有条目的一个迭代器
    public Iterator entries();
 }
-

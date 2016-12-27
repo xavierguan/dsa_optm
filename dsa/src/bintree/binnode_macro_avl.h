@@ -14,4 +14,3 @@
 #define BalFac(x) ( stature( (x).lc ) - stature( (x).rc ) ) //平衡因子
 #define AvlBalanced(x) ( ( -2 < BalFac(x) ) && ( BalFac(x) < 2 ) ) //AVL平衡条件
 
-

@@ -16,4 +16,3 @@ PFCForest* initForest() { //PFC编码森林初始化
    }
    return forest; //返回包含N_CHAR棵树的森林，其中每棵树各包含一个字符
 }
-

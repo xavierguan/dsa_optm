@@ -25,4 +25,3 @@ template <typename T> struct BTNode { //B-树节点模板类
       if ( lc ) lc->parent = this; if ( rc ) rc->parent = this;
    }
 };
-

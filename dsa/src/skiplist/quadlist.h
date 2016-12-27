@@ -38,4 +38,3 @@ public:
 }; //Quadlist
 
 #include "quadlist_implementation.h"
-

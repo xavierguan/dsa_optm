@@ -33,4 +33,3 @@ int main ( int argc, char* argv[] ) {
          << nQueen << " queen(s)\n"; //输出解的总数
    return 0;
 }
-

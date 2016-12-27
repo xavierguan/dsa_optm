@@ -49,4 +49,3 @@ public class Sorter_Quicksort implements Sorter {
       S.replaceAtRank(j, temp);
    }
 }
-

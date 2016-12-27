@@ -17,4 +17,3 @@ template <typename T> bool Vector<T>::bubble ( Rank lo, Rank hi ) { //一趟扫�
       }
    return sorted; //返回有序标志
 }
-

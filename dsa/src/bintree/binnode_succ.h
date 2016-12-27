@@ -19,4 +19,3 @@ template <typename T> BinNodePosi(T) BinNode<T>::succ() { //定位节点v的直�
    }
    return s;
 }
-

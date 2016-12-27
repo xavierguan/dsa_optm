@@ -18,4 +18,3 @@ template <typename T> struct Hailstone { //函数对象：按照Hailstone规则�
       e = step; //返回转换所经步数
    }
 };
-

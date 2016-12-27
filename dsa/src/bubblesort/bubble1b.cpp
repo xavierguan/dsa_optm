@@ -24,4 +24,3 @@ void bubblesort1B ( int A[], int n ) { //起泡排序算法（版本1B，与版�
    /* DSA */printf ( "#comparison = %d, #swap = %d\n", cmp, swp );
 } //借助布尔型标志位sorted，可及时提前退出，而不致蛮力地做n-1趟扫描交换
 //对尾部有序（或接近有序）的输入，算法依然亦步亦趋地收敛，导致元素比较次数过多
-

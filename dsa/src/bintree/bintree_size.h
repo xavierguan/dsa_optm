@@ -12,4 +12,3 @@ template <typename T> //统计二叉树子树规模
 int BinTree<T>::size ( BinNodePosi(T) x ) //assert: x为二叉树中的合法位置
 {  return x ? size ( x->lc ) + size ( x->RChild ) : 0;  }
 
-

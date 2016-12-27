@@ -11,4 +11,3 @@ __int64 fibI ( int n ) { //计算Fibonacci数列的第n项（迭代版）：O(n)
    while ( 0 < n-- ) { g += f; f = g - f; } //依据原始定义，通过n次加法和减法计算fib(n)
    return g; //返回
 }
-

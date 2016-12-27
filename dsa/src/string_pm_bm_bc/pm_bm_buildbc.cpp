@@ -22,4 +22,3 @@ int* buildBC ( char* P ) { //构造Bad Charactor Shift表：O(m + 256)
    /* DSA */printBC ( bc );
    return bc;
 }
-

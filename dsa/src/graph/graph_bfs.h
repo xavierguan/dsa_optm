@@ -33,4 +33,3 @@ void Graph<Tv, Te>::BFS ( int v, int& clock ) { //assert: 0 <= v < n
       status ( v ) = VISITED; //至此，当前顶点访问完毕
    }
 }
-

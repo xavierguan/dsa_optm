@@ -16,4 +16,3 @@ public: //size()、empty()以及其它开放接口，均可直接沿用
    T& top() { return last()->data; } //取顶：直接返回列表的首元素
 };
 
-

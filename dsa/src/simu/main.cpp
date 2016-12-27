@@ -26,4 +26,3 @@ int main ( int argc, char* argv[] ) {
    simulate ( atoi ( argv[1] ), atoi ( argv[2] ) ); //启动模拟
    return 0;
 }
-

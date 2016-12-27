@@ -66,4 +66,3 @@ public class Vector_Array implements Vector {
       return bak;
    }
 }
-

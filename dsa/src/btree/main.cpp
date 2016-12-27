@@ -62,4 +62,3 @@ int main ( int argc, char* argv[] ) {
    testBTree<int> ( atoi ( argv[1] ), atoi ( argv[2] ) ); //元素类型、比较器可以在这里任意选择
    return 0;
 }
-

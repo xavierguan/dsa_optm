@@ -19,4 +19,3 @@ void displayProgress ( Queue<Customer> windows[], int nWin, int now ) {
       windows[i].traverse ( printCustomer ); printf ( "\n" ); //列出队列中的所有顾客
    }
 }
-

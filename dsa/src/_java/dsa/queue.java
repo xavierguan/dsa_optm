@@ -23,4 +23,3 @@ public interface Queue {
    throws ExceptionQueueEmpty;
    public void Traversal();//遍历
 }
-

@@ -31,4 +31,3 @@ void Graph<Tv, Te>::DFS ( int v, int& clock ) { //assert: 0 <= v < n
       }
    status ( v ) = VISITED; fTime ( v ) = ++clock; //至此，当前顶点v方告访问完毕
 }
-

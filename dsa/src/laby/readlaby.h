@@ -34,4 +34,3 @@ void readLaby ( char* labyFile ) { //读入迷宫
       }
    fclose ( fp );
 }
-

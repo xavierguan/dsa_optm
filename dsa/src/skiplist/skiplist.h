@@ -30,4 +30,3 @@ public:
 };
 
 #include "skiplist_implementation.h"
-

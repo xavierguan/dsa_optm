@@ -13,4 +13,3 @@ template <typename T> struct Crc { //函数对象：累计T类对象的特征（
    Crc ( T& crc ) : c ( crc ) {}
    virtual void operator() ( T& e ) { c += e; } //假设T可直接相加
 };
-

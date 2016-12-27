@@ -13,4 +13,3 @@ int maxR ( int A[], int n ) { //数组求最大值算法（线性递归版）
       return max ( maxR ( A, n - 1 ), A[n - 1] );
 } //O(1) * 递归深度 = O(1) * (n + 1) = O(n)
 
-

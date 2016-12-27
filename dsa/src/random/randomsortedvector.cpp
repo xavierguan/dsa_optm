@@ -18,4 +18,3 @@ randomSortedVector ( int n, int min, int max ) { //ACP, Vol.2, Algorithm S
          { A.insert ( A.size(), i ); n--; }
    return A;
 }
-

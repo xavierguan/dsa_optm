@@ -16,4 +16,3 @@ template <typename T> T PQ_LeftHeap<T>::delMax() { //基于合并操作的词条
 //   if ( _root ) _root->parent = NULL; //若堆非空，还需相应设置父子链接
    return e; //返回原根节点的数据项
 }
-

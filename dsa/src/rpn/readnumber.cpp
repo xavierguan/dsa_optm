@@ -18,4 +18,3 @@ void readNumber ( char*& p, Stack<float>& stk ) { //将起始于p的子串解析
       stk.push ( stk.pop() + ( *p - '0' ) * ( fraction /= 10 ) ); //小数部分
 }
 
-

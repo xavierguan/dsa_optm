@@ -18,4 +18,3 @@ void BinNode<T>::travPost ( VST& visit ) { //二叉树后序遍历算法统一�
       default: travPost_R ( this, visit ); break; //递归版
    }
 }
-

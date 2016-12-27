@@ -18,4 +18,3 @@ public:
    int next() { g += f; f = g - f; return g; } //转至下一Fibonacci项，O(1)时间
    int prev() { f = g - f; g -= f; return g; } //转至上一Fibonacci项，O(1)时间
 };
-

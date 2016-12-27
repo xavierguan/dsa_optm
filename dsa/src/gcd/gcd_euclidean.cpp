@@ -19,4 +19,3 @@ __int64 gcdEU ( __int64 a, __int64 b ) { //assert: 0 <= min(a, b)
    }
 }
 
-

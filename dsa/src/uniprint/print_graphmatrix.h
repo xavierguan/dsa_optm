@@ -40,4 +40,3 @@ void UniPrint::p ( GraphMatrix<Tv, Te>& s ) { //引用
    }
    printf ( "\n" );
 }
-

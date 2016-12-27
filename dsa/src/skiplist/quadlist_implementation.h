@@ -23,4 +23,3 @@
 
 #include "quadlist_traverse.h"
 
-

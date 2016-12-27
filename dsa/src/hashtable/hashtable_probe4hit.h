@@ -22,4 +22,3 @@ template <typename K, typename V> int Hashtable<K, V>::probe4Hit ( const K& k ) 
    return r; //调用者根据ht[r]是否为空，即可判断查找是否成功
 }
 
-

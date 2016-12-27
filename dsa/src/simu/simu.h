@@ -23,4 +23,3 @@ void displayProgress ( Queue<Customer> window[], int nWin, int now );
 void simulate ( int, int );
 
 extern int delay; //控制进度显示的延迟
-

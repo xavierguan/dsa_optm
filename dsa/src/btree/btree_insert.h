@@ -18,4 +18,3 @@ template <typename T> bool BTree<T>::insert ( const T& e ) { //将关键码e插�
    return true; //插入成功
 }
 
-

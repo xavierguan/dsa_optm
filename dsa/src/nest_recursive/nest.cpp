@@ -29,4 +29,3 @@ bool paren ( const char exp[], int lo, int hi ) { //检查表达式exp[lo, hi]�
    if ( mi > hi ) return false; //切分点不合法，意味着局部以至整体不匹配
    return paren ( exp, lo + 1, mi - 1 ) && paren ( exp, mi + 1, hi ); //分别检查左、右子表达式
 }
-

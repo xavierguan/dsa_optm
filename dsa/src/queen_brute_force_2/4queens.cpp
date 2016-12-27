@@ -21,4 +21,3 @@ void place4Queens() { //4皇后剪枝算法
                            nSolu++; displaySolution ( solu, 4 );
                         }
 }
-

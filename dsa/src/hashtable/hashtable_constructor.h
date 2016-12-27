@@ -17,4 +17,3 @@ template <typename K, typename V> Hashtable<K, V>::Hashtable ( int c ) { //创�
    lazyRemoval = new Bitmap ( M ); //懒惰删除标记比特图
    //* DSA */printf("A bucket array has been created with capacity = %d\n\n", M);
 }
-

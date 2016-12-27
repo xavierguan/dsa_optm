@@ -17,5 +17,3 @@ static BinNodePosi(T) & searchIn ( BinNodePosi(T) & v, const T& e, BinNodePosi(T
       if ( EQUAL ( e, c ) ) return c; hot = c; //命中返回，或者深入一层
    } //hot始终指向最后一个失败节点
 } //返回时，返回值指向命中节点（或假想的通配哨兵），hot指向其父亲（退化时为初始值NULL）
-
-

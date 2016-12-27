@@ -21,4 +21,3 @@ public class ComparatorLexicographic implements Comparator {
       return (ax != bx) ? (ax - bx) : (ay - by);
    }
 }
-

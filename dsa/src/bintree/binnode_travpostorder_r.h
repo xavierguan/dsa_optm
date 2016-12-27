@@ -16,4 +16,3 @@ void travPost_R ( BinNodePosi(T) x, VST& visit ) { //二叉树后序遍历算法
    visit ( x->data );
 }
 
-

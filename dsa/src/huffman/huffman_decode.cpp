@@ -17,4 +17,3 @@ void decode ( HuffTree* tree, Bitmap* code, int n ) {
    }
    /* DSA */if ( x != tree->root() ) printf ( "..." ); printf ( "\n" );
 } //解出的明码，在此直接打印输出；实用中可改为根据需要返回上层调用者
-

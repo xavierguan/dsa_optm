@@ -45,4 +45,3 @@ public:
 }; //BinTree
 
 #include "bintree_implementation.h"
-

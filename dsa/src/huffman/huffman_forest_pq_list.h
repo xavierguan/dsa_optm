@@ -10,4 +10,3 @@
 
 #include "../pq_list/pq_list.h" //用pq_list实现
 typedef PQ_List<HuffTree*> HuffForest; //Huffman森林
-

@@ -13,4 +13,3 @@ void move ( Stack<Disk>& Sa, Stack<Disk>& Sb ) { //将Sa顶部的盘子移至Sb�
    Sb.push ( Sa.pop() ); //pop a disk from stack A and push it into stack B
    displayHanoi();
 }
-

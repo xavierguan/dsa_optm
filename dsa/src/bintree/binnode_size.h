@@ -14,4 +14,3 @@ template <typename T> int BinNode<T>::size() { //统计当前节点后代总数�
    if ( rc ) s += rc->size(); //递归计入右子树规模
    return s;
 }
-

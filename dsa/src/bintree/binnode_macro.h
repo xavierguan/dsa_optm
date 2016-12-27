@@ -12,4 +12,3 @@
 #include "binnode_macro_avl.h"
 #include "binnode_macro_redblack.h"
 
-

@@ -17,4 +17,3 @@ public class EqualityTesterDefault implements EqualityTester {
    public boolean isEqualTo(Object a, Object b)
    {  return (a.equals(b)); }//使用Java提供的判等器
 }
-

@@ -35,4 +35,3 @@ using namespace std;
 #else //朴素方案：直接用List实现的Huffman森林
 #include "../huffman/huffman_forest_list.h"
 #endif
-

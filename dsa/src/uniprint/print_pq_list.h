@@ -17,4 +17,3 @@ void UniPrint::p ( PQ_List<T> & pq ) { //引用
    p ( ( List<T> & ) pq ); printf ( "\n" );
 }
 
-

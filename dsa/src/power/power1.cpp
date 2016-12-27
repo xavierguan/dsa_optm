@@ -18,4 +18,3 @@ __int64 power ( __int64 a, int n ) { //a^n算法：n >= 0
    return pow; //O(1)
 } //power()
 
-

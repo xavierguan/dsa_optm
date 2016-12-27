@@ -19,4 +19,3 @@ void BinNode<T>::travLevel ( VST& visit ) { //二叉树层次遍历算法
       if ( HasRChild ( *x ) ) Q.enqueue ( x->rc ); //右孩子入队
    }
 }
-

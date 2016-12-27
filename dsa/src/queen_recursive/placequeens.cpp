@@ -23,4 +23,3 @@ void placeQueens ( int nQueen, int k ) { //放置n个皇后中的第k个（假�
             placeQueens ( nQueen, k + 1 ); //进而考虑下一皇后
       } //思考：这里的回溯，通过什么机制实现？
 }
-

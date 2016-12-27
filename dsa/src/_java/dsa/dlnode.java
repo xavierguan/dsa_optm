@@ -51,4 +51,3 @@ public class DLNode implements Position {
    public void setPrev(DLNode newPrev)
    { prev = newPrev; }
 }
-

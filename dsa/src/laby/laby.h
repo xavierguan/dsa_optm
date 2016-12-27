@@ -26,4 +26,3 @@ bool labyrinth ( Cell Laby[LABY_MAX][LABY_MAX], Cell* s, Cell* t ) {
    } while ( !path.empty() );
    return false;
 }
-

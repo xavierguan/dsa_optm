@@ -25,4 +25,3 @@ template <typename T> void checkOrder ( Vector<T> & V ) { //判断向量是否�
 //   else
 //      printf("Sorted\n");
 //}
-

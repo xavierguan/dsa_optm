@@ -23,4 +23,3 @@ void place5Queens() { //5皇后剪枝算法
                                  nSolu++; displaySolution ( solu, 5 );
                               }
 }
-

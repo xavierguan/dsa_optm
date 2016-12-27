@@ -55,4 +55,3 @@ public class BinTree_LinkedList implements BinTree {
    public Iterator elementsLevelorder()
    { return root.elementsLevelorder(); }
 }
-

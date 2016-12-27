@@ -20,4 +20,3 @@ static BinNodePosi(T) merge ( BinNodePosi(T) a, BinNodePosi(T) b ) {
    a->npl = a->rc ? a->rc->npl + 1 : 1; //更新a的npl
    return a; //返回合并后的堆顶
 } //本算法只实现结构上的合并，堆的规模须由上层调用者负责更新
-

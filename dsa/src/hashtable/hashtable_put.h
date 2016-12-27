@@ -15,4 +15,3 @@ template <typename K, typename V> bool Hashtable<K, V>::put ( K k, V v ) { //散
    if ( N * 2 > M ) rehash(); //装填因子高于50%后重散列
    return true;
 }
-

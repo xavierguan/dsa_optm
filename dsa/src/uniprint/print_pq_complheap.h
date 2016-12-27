@@ -45,4 +45,3 @@ static void printComplHeap ( Vector<T>& elem, int n, int k, int depth, int type,
    printComplHeap ( elem, n, LChild ( k ), depth + 1, L_CHILD, bType ); //左子树（在下）
 }
 
-

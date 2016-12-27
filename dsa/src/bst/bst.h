@@ -24,4 +24,3 @@ public: //基本接口：以virtual修饰，强制要求所有派生类（BST变
 };
 
 #include "bst_implementation.h"
-

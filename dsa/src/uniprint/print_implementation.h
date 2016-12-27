@@ -27,4 +27,3 @@
 #include "print_graphmatrix.h"
 
 #include "print_traversable.h"
-

@@ -17,4 +17,3 @@ bool collide ( int* solu, int k ) { //判断是否可以在当前行的第k列�
    }
    return false;
 }
-

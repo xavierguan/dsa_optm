@@ -26,4 +26,3 @@ template <typename T> BinNodePosi(T) BST<T>::connect34 (
    b->rc = c; c->parent = b; updateHeight ( b );
    return b; //该子树新的根节点
 }
-

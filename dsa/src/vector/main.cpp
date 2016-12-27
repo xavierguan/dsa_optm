@@ -9,6 +9,7 @@
 /* *****************************************************************************************
  * Test of Vector
  ***************************************************************************************** */
+#include <algorithm>
 #include "vector_test.h"
 
 int testID = 0; //测试编号
@@ -86,47 +87,50 @@ void   testVector ( int testSize ) {
    Vector<T> V;
    for ( int i = 0; i < testSize; i++ ) V.insert ( dice ( i + 1 ), dice ( ( T ) testSize * 3 ) ); //在[0, 3n)中选择n个数，随机插入向量
    PRINT ( V );
-   permute ( V );
-   PRINT ( V )
-   printf ( "\n  ==== Test %2d. Lowpass on\n", testID++ ); PRINT ( V );
-   int i = V.size(); while ( 0 < --i ) { V[i-1] += V[i]; V[i-1] >>= 1; }    PRINT ( V );
-   printf ( "\n  ==== Test %2d. Increase\n", testID++ ); PRINT ( V );
-   increase ( V ); PRINT ( V );
-   printf ( "\n  ==== Test %2d. FIND in\n", testID++ ); PRINT ( V );
-   TestFind<T> ( V, testSize );
-   printf ( "\n  ==== Test %2d. Sort degenerate intervals each of size 1 in\n", testID++, 0, V.size() ); PRINT ( V );
-   for ( int i = 0; i < V.size(); i += V.size() / 5 ) { V.sort ( i, i ); PRINT ( V ); } //element by element
-   printf ( "\n  ==== Test %2d. Sort 5 intervals each of size %d in\n", testID++, V.size() / 5 ); PRINT ( V );
-   for ( int i = 0; i < V.size(); i += V.size() / 5 ) { V.sort ( i, min ( V.size(), i + V.size() / 5 ) ); PRINT ( V ); } //interval by interval
-   printf ( "\n  ==== Test %2d. Sort the entire vector of\n", testID++, 0, V.size() ); PRINT ( V );
-   V.sort();   PRINT ( V );
-   printf ( "\n  ==== Test %2d. FIND in\n", testID++ ); PRINT ( V );
-   TestFind<T> ( V, testSize );
-   printf ( "\n  ==== Test %2d. SEARCH in\n", testID++ ); PRINT ( V );
-   TestSearch<T> ( V );
-   printf ( "\n  ==== Test %2d. Unsort interval [%d, %d) in\n", testID++, V.size() / 4, 3 * V.size() / 4 ); PRINT ( V );
-   V.unsort ( V.size() / 4, 3 * V.size() / 4 );   PRINT ( V );
-   printf ( "\n  ==== Test %2d. Unsort interval [%d, %d) in\n", testID++, 0, V.size() ); PRINT ( V );
-   V.unsort();   PRINT ( V );
-   printf ( "\n  ==== Test %2d. Copy interval [%d, %d) from\n", testID++, V.size() / 4, 3 * V.size() / 4 ); PRINT ( V );
-   Vector<T> U ( V, V.size() / 4, 3 * V.size() / 4 );
-   PRINT ( U );
-   printf ( "\n  ==== Test %2d. Copy from\n", testID++ ); PRINT ( V );
-   Vector<T> W ( V );
-   PRINT ( W );
-   printf ( "\n  ==== Test %2d. Clone from\n", testID++ ); PRINT ( U );
-   W = U;
-   PRINT ( W );
-   printf ( "\n  ==== Test %2d. Remove redundancy in unsorted\n", testID++ ); PRINT ( V );
-   printf ( "%d node(s) removed\n", V.deduplicate() );   PRINT ( V );
-   printf ( "\n  ==== Test %2d. Sort interval [%d, %d) in\n", testID++, 0, V.size() ); PRINT ( V );
-   V.sort();   PRINT ( V );
-   printf ( "\n  ==== Test %2d. FIND in V[%d]\n", testID++ ); PRINT ( V );
-   TestFind<T> ( V, testSize );
-   printf ( "\n  ==== Test %2d. SEARCH & INSERT in\n", testID++ ); PRINT ( V );
-   TestOrderedInsertion<T> ( V, testSize );  PRINT ( V );
-   printf ( "\n  ==== Test %2d. Remove redundancy in sorted\n", testID++ ); PRINT ( V );
-   printf ( "%d node(s) removed\n", V.uniquify() );   PRINT ( V );
+   //permute ( V );
+   //PRINT ( V )
+   //printf ( "\n  ==== Test %2d. Lowpass on\n", testID++ ); PRINT ( V );
+   //int i = V.size(); while ( 0 < --i ) { V[i-1] += V[i]; V[i-1] >>= 1; }    PRINT ( V );
+   //printf ( "\n  ==== Test %2d. Increase\n", testID++ ); PRINT ( V );
+   //increase ( V ); PRINT ( V );
+   //printf ( "\n  ==== Test %2d. FIND in\n", testID++ ); PRINT ( V );
+   //TestFind<T> ( V, testSize );
+   //printf ( "\n  ==== Test %2d. Sort degenerate intervals each of size 1 in\n", testID++, 0, V.size() ); PRINT ( V );
+   //for ( int i = 0; i < V.size(); i += V.size() / 5 ) { V.sort ( i, i ); PRINT ( V ); } //element by element
+   //printf ( "\n  ==== Test %2d. Sort 5 intervals each of size %d in\n", testID++, V.size() / 5 ); PRINT ( V );
+   //for ( int i = 0; i < V.size(); i += V.size() / 5 ) { V.sort ( i, min ( V.size(), i + V.size() / 5 ) ); PRINT ( V ); } //interval by interval
+   //printf ( "\n  ==== Test %2d. Sort the entire vector of\n", testID++, 0, V.size() ); PRINT ( V );
+   //V.sort();   PRINT ( V );
+   //printf ( "\n  ==== Test %2d. FIND in\n", testID++ ); PRINT ( V );
+   //TestFind<T> ( V, testSize );
+   //printf ( "\n  ==== Test %2d. SEARCH in\n", testID++ ); PRINT ( V );
+   //TestSearch<T> ( V );
+   //printf ( "\n  ==== Test %2d. Unsort interval [%d, %d) in\n", testID++, V.size() / 4, 3 * V.size() / 4 ); PRINT ( V );
+   //V.unsort ( V.size() / 4, 3 * V.size() / 4 );   PRINT ( V );
+   //printf ( "\n  ==== Test %2d. Unsort interval [%d, %d) in\n", testID++, 0, V.size() ); PRINT ( V );
+   //V.unsort();   PRINT ( V );
+   //printf ( "\n  ==== Test %2d. Copy interval [%d, %d) from\n", testID++, V.size() / 4, 3 * V.size() / 4 ); PRINT ( V );
+   //Vector<T> U ( V, V.size() / 4, 3 * V.size() / 4 );
+   //PRINT ( U );
+   //printf ( "\n  ==== Test %2d. Copy from\n", testID++ ); PRINT ( V );
+   //Vector<T> W ( V );
+   //PRINT ( W );
+   //printf ( "\n  ==== Test %2d. Clone from\n", testID++ ); PRINT ( U );
+   //W = U;
+   //PRINT ( W );
+   //printf ( "\n  ==== Test %2d. Remove redundancy in unsorted\n", testID++ ); PRINT ( V );
+   //printf ( "%d node(s) removed\n", V.deduplicate() );   PRINT ( V );
+   //printf ( "\n  ==== Test %2d. Sort interval [%d, %d) in\n", testID++, 0, V.size() ); PRINT ( V );
+   //V.sort();   PRINT ( V );
+   //printf ( "\n  ==== Test %2d. FIND in V[%d]\n", testID++ ); PRINT ( V );
+   //TestFind<T> ( V, testSize );
+   //printf ( "\n  ==== Test %2d. SEARCH & INSERT in\n", testID++ ); PRINT ( V );
+   //TestOrderedInsertion<T> ( V, testSize );  PRINT ( V );
+   //printf ( "\n  ==== Test %2d. Remove redundancy in sorted\n", testID++ ); PRINT ( V );
+   //printf ( "%d node(s) removed\n", V.uniquify() );   PRINT ( V );
+
+   V.sort();
+   PRINT(V);
 }
 
 /* *****************************************************************************************
@@ -138,4 +142,3 @@ int main ( int argc, char* argv[] ) {
    testVector<int> ( atoi ( argv[1] ) ); //元素类型可以在这里任意选择
    return 0;
 }
-

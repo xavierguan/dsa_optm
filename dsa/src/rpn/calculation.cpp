@@ -24,4 +24,3 @@ float calcu ( char op, float b ) { //执行一元运算
       default  : exit ( -1 );
    }
 }
-

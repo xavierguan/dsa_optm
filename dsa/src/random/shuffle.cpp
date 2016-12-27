@@ -17,4 +17,3 @@ void shuffle ( int A[], int n ) { //将A[0, n)随机打乱
 void shuffle ( int A[], int lo, int hi ) //将A[lo, hi)随机打乱
 {  shuffle ( A + lo, hi - lo );  }
 
-

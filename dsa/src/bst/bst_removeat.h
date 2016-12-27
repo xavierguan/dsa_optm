@@ -32,4 +32,3 @@ static BinNodePosi(T) removeAt ( BinNodePosi(T) & x, BinNodePosi(T) & hot ) {
    release ( w->data ); release ( w ); return succ; //释放被摘除节点，返回接替者
 }
 
-

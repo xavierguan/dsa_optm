@@ -24,4 +24,3 @@ PFCTable* generateTable ( PFCTree* tree ) { //构造PFC编码表
    generateCT ( code, 0, table, tree->root() ); //遍历以获取各字符（叶节点）的RPS
    release ( code ); return table; //释放编码位图，返回编码表
 }
-

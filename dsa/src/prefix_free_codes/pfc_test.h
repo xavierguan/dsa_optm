@@ -23,4 +23,3 @@ extern PFCTree* generateTree ( PFCForest* ); //构造编码树
 extern PFCTable* generateTable ( PFCTree* ); //由编码树转换为编码表
 extern int encode ( PFCTable*, Bitmap&, char* ); //明文的编码，返回编码长度
 extern void decode ( PFCTree*, Bitmap&, int ); //二进制串的解码
-

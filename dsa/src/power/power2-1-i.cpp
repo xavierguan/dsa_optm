@@ -17,4 +17,3 @@ __int64 power2_I ( int n ) { //幂函数2^n算法（优化迭代版），n >= 0
    }
    return pow; //O(1)：返回累积器
 } //O(logn) = O(r)，r为输入指数n的比特位数
-

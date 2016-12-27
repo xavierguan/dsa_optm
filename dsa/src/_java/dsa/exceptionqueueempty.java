@@ -18,4 +18,3 @@ public class ExceptionQueueEmpty extends RuntimeException {
    }
 }
 
-

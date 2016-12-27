@@ -27,4 +27,3 @@ HuffTree* generateTree ( HuffForest* forest ) {
    HuffTree* tree = forest->delMax(); //至此，森林中的最后一棵树
    return tree; //即全局Huffman编码树
 }
-

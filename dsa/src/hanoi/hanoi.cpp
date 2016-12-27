@@ -16,4 +16,3 @@ void hanoi ( int n, Stack<Disk>& Sx, Stack<Disk>& Sy, Stack<Disk>& Sz ) {
    }
 }
 
-

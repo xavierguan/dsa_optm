@@ -42,4 +42,3 @@ int* buildGS ( char* P ) { //构造好后缀位移量表：O(m)
    delete [] ss; return gs;
 }
 
-

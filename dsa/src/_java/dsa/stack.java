@@ -19,4 +19,3 @@ public interface Stack {
    public void push (Object ele);//入栈
    public Object pop() throws ExceptionStackEmpty;//出栈
 }
-

@@ -17,4 +17,3 @@ int shift1 ( int* A, int n, int k ) { //通过GCD(n, k)轮迭代，将数组循�
    }
    return mov;
 }
-

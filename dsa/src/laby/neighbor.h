@@ -17,4 +17,3 @@ inline Cell* neighbor ( Cell* cell ) { //查询当前位置的相邻格点
       default    : exit ( -1 );
    }
 }
-

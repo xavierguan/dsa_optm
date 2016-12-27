@@ -11,4 +11,3 @@
 #include "../list/list.h" //用list实现
 typedef List<HuffTree*> HuffForest; //Huffman森林
 
-

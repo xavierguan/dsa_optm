@@ -26,4 +26,3 @@ void placeQueens ( int N ) { //N皇后算法（迭代版）：采用试探/回�
       }/* DSA */if ( Step == runMode ) displayProgress ( solu, N );
    } while ( ( 0 < q.x ) || ( q.y < N ) ); //所有分支均已或穷举或剪枝之后，算法结束
 }
-

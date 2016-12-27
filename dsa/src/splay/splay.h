@@ -19,4 +19,3 @@ public:
 };
 
 #include "splay_implementation.h"
-

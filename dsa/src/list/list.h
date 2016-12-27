@@ -69,4 +69,3 @@ public:
 
 #include "list_implementation.h"
 
-

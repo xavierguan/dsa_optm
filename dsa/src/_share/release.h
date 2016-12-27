@@ -8,7 +8,7 @@
 
 #pragma once
 
-#include <typeinfo>
+#include <typeinfo.h>
 
 /* *****************************************************************************************
  * 列表、向量等结构内的节点中，可以存放基本类型或构造类型
@@ -41,4 +41,3 @@ template <typename T> struct Cleaner<T*> {
 };
 
 template <typename T> void release ( T x ) { Cleaner<T>::clean ( x ); }
-

@@ -13,4 +13,3 @@ int main ( int argc, char* argv[] ) { //阶乘运算测试
       printf ( "\t%d\t%22I64d\t%22I64d\n", i, facI ( i ), facR ( i ) );
    return 0;
 }
-

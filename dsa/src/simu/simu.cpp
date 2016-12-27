@@ -27,4 +27,3 @@ void simulate ( int nWin, int servTime ) { //按指定窗口数、服务总时�
    } //for
    delete [] windows; //释放所有队列（此前，~List()会自动清空队列）
 }
-

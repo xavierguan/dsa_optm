@@ -15,4 +15,3 @@ int maxR ( int A[], int lo, int hi ) { //计算数组区间A[lo, hi)的最大值
    }
 } //O(hi - lo)，线性正比于区间的长度
 
-

@@ -18,4 +18,3 @@ template <typename T> BinNodePosi(T) BinNode<T>::zig() { //顺时针旋转
    return lChild;
 }
 
-

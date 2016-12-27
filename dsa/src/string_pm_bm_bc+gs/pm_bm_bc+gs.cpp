@@ -23,4 +23,3 @@ int match ( char* P, char* T ) { //Boyer-Morre算法（完全版，兼顾Bad Cha
    delete [] gs; delete [] bc; //销毁GS表和BC表
    return i;
 }
-

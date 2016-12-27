@@ -24,4 +24,3 @@ template <typename T> struct ListNode { //列表节点模板类（以双向链�
 };
 
 #include "listnode_implementation.h"
-

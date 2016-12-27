@@ -60,4 +60,3 @@ public class Stack_Array implements Stack {
       return elem;
    }
 }
-

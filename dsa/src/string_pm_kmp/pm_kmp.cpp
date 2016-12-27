@@ -25,4 +25,3 @@ int match ( char* P, char* T ) {  //KMP算法
    delete [] next; //释放next表
    return i - j;
 }
-

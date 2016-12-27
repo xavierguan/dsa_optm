@@ -22,4 +22,3 @@ int* buildNext ( char* P ) { //构造模式串P的next表
    /* DSA */printNext ( N, 0, m );
    return N;
 }
-

@@ -26,4 +26,3 @@ Operator optr2rank ( char op ) { //由运算符转译出编号
 char orderBetween ( char op1, char op2 ) //比较两个运算符之间的优先级
 { return pri[optr2rank ( op1 ) ][optr2rank ( op2 ) ]; }
 
-

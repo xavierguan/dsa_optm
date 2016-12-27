@@ -14,4 +14,3 @@ bool check1by1 ( char* P, char* T, size_t i ) { //指纹相同时，逐位比对
    return true;
 }
 
-
