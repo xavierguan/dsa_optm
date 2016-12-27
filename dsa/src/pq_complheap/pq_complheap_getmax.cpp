@@ -8,10 +8,8 @@
 
 #pragma once
 
-template <typename T> T PQ_ComplHeap<T>::delMax() { //删除非空完全二叉堆中优先级最高的词条
-   T maxElem = _elem[0]; _elem[0] = _elem[ --_size ]; //摘除堆顶（首词条），代之以末词条
-   percolateDown ( _size, 0 ); //对新堆顶实施下滤
-   return maxElem; //返回此前备份的最大词条
-}
+#include "pq_complheap.h"
+
+template <typename T> T PQ_ComplHeap<T>::getMax() {  return _elem[0];  } //取优先级最高的词条
 
 

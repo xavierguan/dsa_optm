@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "avl.h"
+
 template <typename T> bool AVL<T>::remove ( const T& e ) { //从AVL树中删除关键码e
    BinNodePosi(T) & x = search ( e ); if ( !x ) return false; //确认目标存在（留意_hot的设置）
    removeAt ( x, _hot ); _size--; //先按BST规则删除之（此后，原节点之父_hot及其祖先均可能失衡）

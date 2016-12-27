@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "bintree.h"
+
 template <typename T> BinNodePosi(T) BinTree<T>::insertAsRoot ( T const& e )
 { _size = 1; return _root = new BinNode<T> ( e ); } //将e当作根节点插入空的二叉树
 

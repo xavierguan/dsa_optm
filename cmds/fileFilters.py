@@ -5,9 +5,9 @@ import os
 import xml.dom.minidom
 
 
-def fix(path):
+def fix(path, rootProPath):
     # zh2en(path)
-    addCodeFiles(path)
+    genSubPro(path, rootProPath)
     pass
 
 
@@ -25,56 +25,64 @@ def zh2en(path):
 
 
 # 分析 vcproj 文件
-def addCodeFiles(path):
+def genSubPro(path, rootProPath):
+    print('<<<' + path)
     dirName = os.path.dirname(path)
-    baseName = os.path.basename(path)
-    extList = os.path.splitext(baseName)
-    fileName = extList[0]
-
+    # baseName = os.path.basename(path)
+    # extList = os.path.splitext(baseName)
     # 文件夹的最后一部分
     folderBaseName = os.path.basename(dirName)
 
-    print('dirName: ' + dirName)
-    print('baseName: ' + baseName)
-    print('folderBaseName: ' + folderBaseName)
-
+    # vcxprojFileName = baseName.replace('.vcxproj.filters', '')
+    # 使用 folderBaseName
     # 存在文件夹和里面vcproj名字不一致的现象，例如 xxx/nest_recursive/paren_recursive.vcproj
     # 使用文件夹的名字Qt工程才能认
-    #
-    #
-    # subProPath = os.path.join(dirName, folderBaseName + '.pro')
-    # subProFile = open(subProPath, 'w')
-    # subProFile.write('TEMPLATE = app\n')
-    # subProFile.write('CONFIG += console c++11\n')
-    # subProFile.write('CONFIG -= app_bundle\n')
-    # subProFile.write('CONFIG -= qt\n')
+
+    # 主 pro 写入 子目录
+    rootProFile = open(rootProPath, 'a')
+    rootProFile.write('\t' + folderBaseName + '\\\n')
+    rootProFile.close()
+
+    # 创建 子工程
+    subProPath = os.path.join(dirName, folderBaseName + '.pro')
+    subProFile = open(subProPath, 'w')
+    subProFile.write('TEMPLATE = app\n')
+    subProFile.write('CONFIG += console c++11\n')
+    subProFile.write('CONFIG -= app_bundle\n')
+    subProFile.write('CONFIG -= qt\n')
+
     #
     # # fileContent = open(vcprojPath).read().decode('gbk').encode('utf-8')
-    # fileContent = open(vcprojPath, 'r', encoding='utf-8').read()
-    # # print(fileContent)
-    #
-    # dom = xml.dom.minidom.parseString(fileContent)
-    # Files = dom.getElementsByTagName("File")
-    #
-    # headerList = []
-    # sourceList = []
-    # for File in Files:
-    #     codeFilePath = File.getAttribute('RelativePath').replace('\\', '/')
-    #     codeFileExt = os.path.splitext(codeFilePath)[1]
-    #     if codeFileExt == '.h':
-    #         headerList.append(codeFilePath)
-    #     elif codeFileExt == '.cpp':
-    #         sourceList.append(codeFilePath)
-    #
-    # subProFile.write('HEADERS  += \\\n')
-    # for header in headerList:
-    #     subProFile.write('\t' + header + ' \\\n')
-    #
-    # subProFile.write('\n')
-    #
-    # subProFile.write('SOURCES  += \\\n')
-    # for source in sourceList:
-    #     subProFile.write('\t' + source + ' \\\n')
-    #
-    # subProFile.close()
+    fileContent = open(path, 'r', encoding='utf-8').read()
+
+    dom = xml.dom.minidom.parseString(fileContent)
+    eleClCompiles = dom.getElementsByTagName("ClCompile")
+    eleClIncludes = dom.getElementsByTagName("ClInclude")
+
+
+    headerList = []
+    sourceList = []
+
+    for eleFile in eleClCompiles:
+        codeFilePath = eleFile.getAttribute('Include')
+        codeFilePath = codeFilePath.replace('\\', '/').lower()
+        sourceList.append(codeFilePath)
+
+    for eleFile in eleClIncludes:
+        codeFilePath = eleFile.getAttribute('Include')
+        codeFilePath = codeFilePath.replace('\\', '/').lower()
+        headerList.append(codeFilePath)
+
+
+    subProFile.write('HEADERS  += \\\n')
+    for header in headerList:
+        subProFile.write('\t' + header + ' \\\n')
+
+    subProFile.write('\n')
+
+    subProFile.write('SOURCES  += \\\n')
+    for source in sourceList:
+        subProFile.write('\t' + source + ' \\\n')
+
+    subProFile.close()
 

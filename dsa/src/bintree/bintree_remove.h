@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "bintree.h"
+
 template <typename T> //删除二叉树中位置x处的节点及其后代，返回被删除节点的数值
 int BinTree<T>::remove ( BinNodePosi(T) x ) { //assert: x为二叉树中的合法位置
    FromParentTo ( *x ) = NULL; //切断来自父节点的指针

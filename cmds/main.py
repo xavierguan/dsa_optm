@@ -23,7 +23,7 @@ def main(root):
             if ext == '.h' or ext == '.cpp' or ext == '.java':
                 fileCode.fix(fullPath)
             if ext == '.filters':
-                fileFilters.fix(fullPath)
+                fileFilters.fix(fullPath, rootProPath)
 
 
 

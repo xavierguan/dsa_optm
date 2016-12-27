@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "pq_complheap.h"
+
 //对向量中的第i个词条实施上滤操作，i < _size
 template <typename T> Rank PQ_ComplHeap<T>::percolateUp ( Rank i ) {
    while ( ParentValid ( i ) ) { //只要i有父亲（尚未抵达堆顶），则

@@ -8,6 +8,8 @@
 
 #pragma once
 
+#include "avl.h"
+
 template <typename T> BinNodePosi(T) AVL<T>::insert ( const T& e ) { //将关键码e插入AVL树中
    BinNodePosi(T) & x = search ( e ); if ( x ) return x; //确认目标节点不存在
    BinNodePosi(T) xx = x = new BinNode<T> ( e, _hot ); _size++; //创建新节点x

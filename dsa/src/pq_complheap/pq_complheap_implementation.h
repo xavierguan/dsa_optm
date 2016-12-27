@@ -16,11 +16,11 @@
 #include "../_share/release.h"
 #include "../_share/util.h"
 
-#include "pq_complheap_insert.h"
-#include "pq_complheap_getmax.h"
-#include "pq_complheap_delmax.h"
-#include "pq_complheap_percolateup.h"
-#include "pq_complheap_percolatedown.h"
-#include "pq_complheap_heapify.h"
+//#include "pq_complheap_insert.cpp"
+//#include "pq_complheap_getmax.cpp"
+//#include "pq_complheap_delmax.cpp"
+//#include "pq_complheap_percolateup.cpp"
+//#include "pq_complheap_percolatedown.cpp"
+//#include "pq_complheap_heapify.cpp"
 
 
